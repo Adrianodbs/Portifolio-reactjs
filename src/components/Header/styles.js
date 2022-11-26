@@ -1,7 +1,11 @@
 import styled from 'styled-components'
 
+export const Page = styled.div`
+  display: flex;
+`
+
 export const Sidebar = styled.header`
-  width: 300px;
+  min-width: 300px;
   height: 100vh;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
@@ -49,6 +53,14 @@ export const UlContent = styled.div`
     display: flex;
     align-items: center;
     gap: 20px;
+    cursor: pointer;
+    padding: 10px 30px;
+    transition: all 0.3s;
+  }
+
+  li.active {
+    background: #ff328e !important;
+    border-radius: 5px;
   }
 
   span {

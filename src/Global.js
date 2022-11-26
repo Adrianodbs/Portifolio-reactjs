@@ -19,5 +19,7 @@ export default createGlobalStyle`
     background-size: cover;
     background-position: center;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
   }
 `
