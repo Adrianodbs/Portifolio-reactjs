@@ -20,6 +20,6 @@ export default createGlobalStyle`
     background-position: center;
     font-family: 'Roboto', sans-serif;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
   }
 `

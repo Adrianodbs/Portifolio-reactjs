@@ -9,7 +9,10 @@ import { GoBook } from 'react-icons/go'
 
 //Hooks
 import { useState } from 'react'
+
+//Pages
 import Home from '../../pages/Home'
+import ProjetosJavaScript from '../../pages/JavaScript'
 
 function Header({ page }) {
   const [menu, setMenu] = useState(1)
@@ -69,7 +72,9 @@ function Header({ page }) {
           </p>
         </C.Contato>
       </C.Sidebar>
+
       {menu === 1 && <Home />}
+      {menu === 2 && <ProjetosJavaScript />}
     </C.Page>
   )
 }

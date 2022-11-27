@@ -72,7 +72,7 @@ export const Contato = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 50px;
   p {
     margin-bottom: 15px;
     font-size: 14px;
@@ -81,3 +81,12 @@ export const Contato = styled.div`
     gap: 10px;
   }
 `
+
+// export const Content = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   margin: 0 auto;
+//   width: 100%;
+// `
