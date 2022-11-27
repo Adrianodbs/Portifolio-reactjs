@@ -13,6 +13,7 @@ import { useState } from 'react'
 //Pages
 import Home from '../../pages/Home'
 import ProjetosJavaScript from '../../pages/JavaScript'
+import ReactPages from '../../pages/React'
 
 function Header({ page }) {
   const [menu, setMenu] = useState(1)
@@ -75,6 +76,7 @@ function Header({ page }) {
 
       {menu === 1 && <Home />}
       {menu === 2 && <ProjetosJavaScript />}
+      {menu === 3 && <ReactPages />}
     </C.Page>
   )
 }
