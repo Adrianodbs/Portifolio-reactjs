@@ -2,7 +2,12 @@ import * as C from './styles'
 import logo from '../../img/programador.png'
 
 //Icons
-import { AiOutlineHome, AiOutlineMobile, AiOutlineMail } from 'react-icons/ai'
+import {
+  AiOutlineHome,
+  AiOutlineMobile,
+  AiOutlineMail,
+  AiOutlineHtml5
+} from 'react-icons/ai'
 import { TbBrandJavascript } from 'react-icons/tb'
 import { FaReact } from 'react-icons/fa'
 import { GoBook } from 'react-icons/go'
@@ -27,6 +32,7 @@ function Header({ page }) {
         <C.Title>
           <C.Logo src={logo} alt="" />
           <h3>Adriano Alves</h3>
+          <h3>Desenvolvedor Front-End</h3>
         </C.Title>
         <C.UlContent>
           <ul>
@@ -55,23 +61,18 @@ function Header({ page }) {
               className={`${menu === 4 ? 'active' : ''}`}
               onClick={() => action(4)}
             >
+              <AiOutlineHtml5 size={25} />
+              <span>Projetos HTML/CSS</span>
+            </li>
+            <li
+              className={`${menu === 5 ? 'active' : ''}`}
+              onClick={() => action(5)}
+            >
               <GoBook size={25} />
               <span>Cursos</span>
             </li>
           </ul>
         </C.UlContent>
-
-        <hr />
-
-        <C.Contato>
-          <p>
-            <AiOutlineMobile size={20} /> <span>(74) 99945-6227</span>
-          </p>
-          <p>
-            <AiOutlineMail size={20} />{' '}
-            <span>adriano_alves_2008@hotmail.com</span>
-          </p>
-        </C.Contato>
       </C.Sidebar>
 
       {menu === 1 && <Home />}

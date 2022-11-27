@@ -15,21 +15,22 @@ export const Sidebar = styled.header`
   transition: 0.4s ease-in-out;
   color: #fff;
 
-  hr {
+  /* hr {
     border: 0.5px solid rgba(255, 255, 255, 0.2);
-    margin: 20px 8px;
+    margin: 10px 8px;
     border-radius: 10px;
-  }
+  } */
 `
 
 export const Title = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
 
   h3 {
     font-size: 22px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 `
 
@@ -68,19 +69,19 @@ export const UlContent = styled.div`
   }
 `
 
-export const Contato = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-  p {
-    margin-bottom: 15px;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-`
+// export const Contato = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   margin-top: 50px;
+//   p {
+//     margin-bottom: 15px;
+//     font-size: 14px;
+//     display: flex;
+//     align-items: center;
+//     gap: 10px;
+//   }
+// `
 
 // export const Content = styled.div`
 //   display: flex;
