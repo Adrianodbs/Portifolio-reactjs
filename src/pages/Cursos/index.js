@@ -1,168 +1,66 @@
 import * as C from './styles'
+import { CHtmlCss } from './lista'
+import { useState } from 'react'
 
 function Cursos() {
+  const [menu, setMenu] = useState(1)
+
+  const action = index => {
+    setMenu(index)
+  }
   return (
     <C.Cursos>
       <ul>
-        <button> HTML5 e CSS3</button>
-        <button> JavaScript</button>
-        <button> React</button>
-        <button> Mobile</button>
-        <button>Outros Cursos</button>
+        <button
+          className={`${menu === 1 ? 'active' : ''}`}
+          onClick={() => action(1)}
+        >
+          {' '}
+          HTML5 e CSS3
+        </button>
+        <button
+          className={`${menu === 2 ? 'active' : ''}`}
+          onClick={() => action(2)}
+        >
+          {' '}
+          JavaScript
+        </button>
+        <button
+          className={`${menu === 3 ? 'active' : ''}`}
+          onClick={() => action(3)}
+        >
+          {' '}
+          React
+        </button>
+        <button
+          className={`${menu === 4 ? 'active' : ''}`}
+          onClick={() => action(4)}
+        >
+          {' '}
+          Mobile
+        </button>
+        <button
+          className={`${menu === 5 ? 'active' : ''}`}
+          onClick={() => action(5)}
+        >
+          Outros Cursos
+        </button>
       </ul>
-      <C.Content>
-        <p>
-          HTML5 e CSS3 parte 1: A primeira página da Web -
-          <strong> 8 Horas </strong>
-          <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML5 e CSS3 parte 2: Posicionamento, listas e navegação -
-          <strong> 8 Horas </strong> <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML5 e CSS3 parte 3: Trabalhando com formulários e tabelas -
-          <strong> 8 Horas </strong> <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML5 e CSS3 parte 4: Avançando no CSS -<strong> 8 Horas </strong>{' '}
-          <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML e CSS: praticando HTML/CSS -<strong> 8 Horas </strong>{' '}
-          <span>(ALURA)</span>
-        </p>
-        <p>
-          Bootstrap: criação de uma single-page responsiva -
-          <strong> 12 Horas </strong> <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML5 e CSS3 parte 1: A primeira página da Web -
-          <strong> 8 Horas </strong>
-          <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML5 e CSS3 parte 2: Posicionamento, listas e navegação -
-          <strong> 8 Horas </strong> <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML5 e CSS3 parte 3: Trabalhando com formulários e tabelas -
-          <strong> 8 Horas </strong> <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML5 e CSS3 parte 4: Avançando no CSS -<strong> 8 Horas </strong>{' '}
-          <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML e CSS: praticando HTML/CSS -<strong> 8 Horas </strong>{' '}
-          <span>(ALURA)</span>
-        </p>
-        <p>
-          Bootstrap: criação de uma single-page responsiva -
-          <strong> 12 Horas </strong> <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML5 e CSS3 parte 1: A primeira página da Web -
-          <strong> 8 Horas </strong>
-          <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML5 e CSS3 parte 2: Posicionamento, listas e navegação -
-          <strong> 8 Horas </strong> <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML5 e CSS3 parte 3: Trabalhando com formulários e tabelas -
-          <strong> 8 Horas </strong> <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML5 e CSS3 parte 4: Avançando no CSS -<strong> 8 Horas </strong>{' '}
-          <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML e CSS: praticando HTML/CSS -<strong> 8 Horas </strong>{' '}
-          <span>(ALURA)</span>
-        </p>
-        <p>
-          Bootstrap: criação de uma single-page responsiva -
-          <strong> 12 Horas </strong> <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML5 e CSS3 parte 1: A primeira página da Web -
-          <strong> 8 Horas </strong>
-          <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML5 e CSS3 parte 2: Posicionamento, listas e navegação -
-          <strong> 8 Horas </strong> <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML5 e CSS3 parte 3: Trabalhando com formulários e tabelas -
-          <strong> 8 Horas </strong> <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML5 e CSS3 parte 4: Avançando no CSS -<strong> 8 Horas </strong>{' '}
-          <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML e CSS: praticando HTML/CSS -<strong> 8 Horas </strong>{' '}
-          <span>(ALURA)</span>
-        </p>
-        <p>
-          Bootstrap: criação de uma single-page responsiva -
-          <strong> 12 Horas </strong> <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML5 e CSS3 parte 1: A primeira página da Web -
-          <strong> 8 Horas </strong>
-          <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML5 e CSS3 parte 2: Posicionamento, listas e navegação -
-          <strong> 8 Horas </strong> <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML5 e CSS3 parte 3: Trabalhando com formulários e tabelas -
-          <strong> 8 Horas </strong> <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML5 e CSS3 parte 4: Avançando no CSS -<strong> 8 Horas </strong>{' '}
-          <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML e CSS: praticando HTML/CSS -<strong> 8 Horas </strong>{' '}
-          <span>(ALURA)</span>
-        </p>
-        <p>
-          Bootstrap: criação de uma single-page responsiva -
-          <strong> 12 Horas </strong> <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML5 e CSS3 parte 1: A primeira página da Web -
-          <strong> 8 Horas </strong>
-          <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML5 e CSS3 parte 2: Posicionamento, listas e navegação -
-          <strong> 8 Horas </strong> <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML5 e CSS3 parte 3: Trabalhando com formulários e tabelas -
-          <strong> 8 Horas </strong> <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML5 e CSS3 parte 4: Avançando no CSS -<strong> 8 Horas </strong>{' '}
-          <span>(ALURA)</span>
-        </p>
-        <p>
-          HTML e CSS: praticando HTML/CSS -<strong> 8 Horas </strong>{' '}
-          <span>(ALURA)</span>
-        </p>
-        <p>
-          Bootstrap: criação de uma single-page responsiva -
-          <strong> 12 Horas </strong> <span>(ALURA)</span>
-        </p>
-      </C.Content>
+      <C.Content>{menu === 1 && <CursoHtml />}</C.Content>
     </C.Cursos>
+  )
+}
+
+const CursoHtml = () => {
+  return (
+    <div>
+      {CHtmlCss.map(item => (
+        <p>
+          {item.nome} - <strong>{item.tempo} Horas</strong>{' '}
+          <span>{item.escola}</span>
+        </p>
+      ))}
+    </div>
   )
 }
 
