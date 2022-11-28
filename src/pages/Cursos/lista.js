@@ -226,3 +226,26 @@ export const CReact = [
     escola: '(Udemy)'
   }
 ]
+
+export const CMobile = [
+  {
+    nome: 'REACT NATIVE: CRIANDO UM APP',
+    tempo: '10',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'REACT NATIVE: UTILIZANDO E CRIANDO HOOKS',
+    tempo: '10',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'REACT NATIVE: CRIANDO MENU E NAVEGANDO ENTRE TELAS',
+    tempo: '10',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'REACT NATIVE: UTILIZANDO WEB API',
+    tempo: '8',
+    escola: '(Alura)'
+  }
+]
