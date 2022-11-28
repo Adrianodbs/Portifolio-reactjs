@@ -1,5 +1,5 @@
 import * as C from './styles'
-import { CHtmlCss, CJavascript, CReact, CMobile } from './lista'
+import { CHtmlCss, CJavascript, CReact, CMobile, COutrosCursos } from './lista'
 import { useState } from 'react'
 
 function Cursos() {
@@ -51,6 +51,7 @@ function Cursos() {
         {menu === 2 && <CursoJavaScript />}
         {menu === 3 && <CursoReact />}
         {menu === 4 && <CursoMobile />}
+        {menu === 5 && <OutrosCursos />}
       </C.Content>
     </C.Cursos>
   )
@@ -99,6 +100,19 @@ const CursoMobile = () => {
   return (
     <div>
       {CMobile.map(item => (
+        <p>
+          {item.nome} - <strong>{item.tempo} Horas</strong>{' '}
+          <span>{item.escola}</span>
+        </p>
+      ))}
+    </div>
+  )
+}
+
+const OutrosCursos = () => {
+  return (
+    <div>
+      {COutrosCursos.map(item => (
         <p>
           {item.nome} - <strong>{item.tempo} Horas</strong>{' '}
           <span>{item.escola}</span>

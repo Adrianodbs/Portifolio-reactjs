@@ -249,3 +249,26 @@ export const CMobile = [
     escola: '(Alura)'
   }
 ]
+
+export const COutrosCursos = [
+  {
+    nome: 'GIT E GITHUB: CONTROLE E COMPARTILHE SEU CÓDIGO',
+    tempo: '6',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'ACESSIBILIDADE WEB PARTE 1: TORNANDO SEU FRONT-END INCLUSIVO',
+    tempo: '6',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'EXPRESSÕES REGULARES: CAPTURANDO TEXTOS DE FORMA MÁGICA',
+    tempo: '12',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'SEO: PRINCÍPIOS DA OTIMIZAÇÃO DE SITES',
+    tempo: '8',
+    escola: '(Alura)'
+  }
+]
