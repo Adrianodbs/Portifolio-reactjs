@@ -20,6 +20,7 @@ import Home from '../../pages/Home'
 import ProjetosJavaScript from '../../pages/JavaScript'
 import ReactPages from '../../pages/React'
 import HtmlCss from '../../pages/HTML'
+import Cursos from '../../pages/Cursos'
 
 function Header({ page }) {
   const [menu, setMenu] = useState(1)
@@ -80,6 +81,7 @@ function Header({ page }) {
       {menu === 2 && <ProjetosJavaScript />}
       {menu === 3 && <ReactPages />}
       {menu === 4 && <HtmlCss />}
+      {menu === 5 && <Cursos />}
     </C.Page>
   )
 }

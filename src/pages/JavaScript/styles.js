@@ -7,8 +7,7 @@ export const Container = styled.div`
   justify-content: space-evenly;
   flex-direction: row;
   background-color: rgba(0, 0, 0, 0.8);
-  /* margin: auto; */
-  /* margin-left: 20px; */
+  margin: auto;
   min-width: 100%;
   border-radius: 8px;
 `
