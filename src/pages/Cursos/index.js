@@ -1,5 +1,5 @@
 import * as C from './styles'
-import { CHtmlCss } from './lista'
+import { CHtmlCss, CJavascript } from './lista'
 import { useState } from 'react'
 
 function Cursos() {
@@ -46,7 +46,10 @@ function Cursos() {
           Outros Cursos
         </button>
       </ul>
-      <C.Content>{menu === 1 && <CursoHtml />}</C.Content>
+      <C.Content>
+        {menu === 1 && <CursoHtml />}
+        {menu === 2 && <CursoJavaScript />}
+      </C.Content>
     </C.Cursos>
   )
 }
@@ -55,6 +58,19 @@ const CursoHtml = () => {
   return (
     <div>
       {CHtmlCss.map(item => (
+        <p>
+          {item.nome} - <strong>{item.tempo} Horas</strong>{' '}
+          <span>{item.escola}</span>
+        </p>
+      ))}
+    </div>
+  )
+}
+
+const CursoJavaScript = () => {
+  return (
+    <div>
+      {CJavascript.map(item => (
         <p>
           {item.nome} - <strong>{item.tempo} Horas</strong>{' '}
           <span>{item.escola}</span>

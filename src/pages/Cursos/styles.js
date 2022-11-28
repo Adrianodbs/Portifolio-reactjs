@@ -37,7 +37,7 @@ export const Content = styled.div`
   border-radius: 8px;
   margin-top: 40px;
   width: 90%;
-  height: 70vh;
+  height: 75vh;
   overflow: scroll;
   ::-webkit-scrollbar-track {
     display: none;
@@ -63,6 +63,7 @@ export const Content = styled.div`
     padding: 5px;
     border-bottom: 2px solid rgba(100, 100, 100, 0.9);
     margin-bottom: 10px;
+    text-transform: uppercase;
   }
 
   strong {

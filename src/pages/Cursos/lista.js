@@ -80,3 +80,86 @@ export const CHtmlCss = [
     escola: '(Alura)'
   }
 ]
+
+export const CJavascript = [
+  {
+    nome: 'LÓGICA DE PROGRAMAÇÃO I: OS PRIMEIROS PROGRAMAS COM JAVASCRIPT E HTML',
+    tempo: '16',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'LÓGICA DE PROGRAMAÇÃO II: PRATIQUE COM DESENHOS, ANIMAÇÕES E UM JOGO',
+    tempo: '10',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'JAVASCRIPT: PRIMEIROS PASSOS COM A LINGUAGEM',
+    tempo: '10',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'JAVASCRIPT: MANIPULANDO O DOM',
+    tempo: '6',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'JAVASCRIPT: PROGRAMANDO A ORIENTAÇÃO A OBJETOS',
+    tempo: '10',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'JAVASCRIPT PARA WEB: CRIE PÁGINAS DINÂMICAS',
+    tempo: '10',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'JAVASCRIPT: PROGRAMANDO NA LINGUAGEM DA WEB',
+    tempo: '20',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'FUNDAMENTOS DO JAVASCRIPT: TIPOS, VARIÁVEIS E FUNÇÕES',
+    tempo: '12',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'JAVASCRIPT NA WEB: VALIDAÇÃO DE FORMULÁRIOS E HTML5',
+    tempo: '8',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'JAVASCRIPT NA WEB: ARMAZENANDO DADOS NO NAVEGADOR',
+    tempo: '6',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'JAVASCRIPT: CONHECENDO O BROWSER E PADRÕES DE PROJETO',
+    tempo: '12',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'JAVASCRIPT: INTERFACES E HERANÇA EM ORIENTAÇÃO A OBJETOS',
+    tempo: '12',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'JAVASCRIPT: CONSUMINDO E TRATANDO DADOS DE UMA API',
+    tempo: '6',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'JAVASCRIPT: MÉTODOS DE ARRAY',
+    tempo: '8',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'JAVASCRIPT: CRIANDO REQUISIÇÕES',
+    tempo: '8',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'JAVASCRIPT: VALIDAÇÕES E RECONHECIMENTO DE VOZ',
+    tempo: '6',
+    escola: '(Alura)'
+  }
+]
