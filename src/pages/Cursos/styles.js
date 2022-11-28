@@ -59,7 +59,7 @@ export const Content = styled.div`
 
   p {
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     padding: 5px;
     border-bottom: 2px solid rgba(100, 100, 100, 0.9);
     margin-bottom: 10px;

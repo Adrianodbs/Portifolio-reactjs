@@ -1,5 +1,5 @@
 import * as C from './styles'
-import { CHtmlCss, CJavascript } from './lista'
+import { CHtmlCss, CJavascript, CReact } from './lista'
 import { useState } from 'react'
 
 function Cursos() {
@@ -49,6 +49,7 @@ function Cursos() {
       <C.Content>
         {menu === 1 && <CursoHtml />}
         {menu === 2 && <CursoJavaScript />}
+        {menu === 3 && <CursoReact />}
       </C.Content>
     </C.Cursos>
   )
@@ -71,6 +72,19 @@ const CursoJavaScript = () => {
   return (
     <div>
       {CJavascript.map(item => (
+        <p>
+          {item.nome} - <strong>{item.tempo} Horas</strong>{' '}
+          <span>{item.escola}</span>
+        </p>
+      ))}
+    </div>
+  )
+}
+
+const CursoReact = () => {
+  return (
+    <div>
+      {CReact.map(item => (
         <p>
           {item.nome} - <strong>{item.tempo} Horas</strong>{' '}
           <span>{item.escola}</span>

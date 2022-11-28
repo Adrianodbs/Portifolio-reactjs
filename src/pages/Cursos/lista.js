@@ -163,3 +163,66 @@ export const CJavascript = [
     escola: '(Alura)'
   }
 ]
+
+export const CReact = [
+  {
+    nome: 'REACT: DESENVOLVENDO COM JAVASCRIPT',
+    tempo: '14',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'REACT: COMO OS COMPONENTES FUNCIONAM',
+    tempo: '8',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'REACT: ABSTRAINDO SEU CSS COM STYLED COMPONENTS',
+    tempo: '6',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'FUNDAMENTOS DE REACT: ESCREVENDO COM TYPESCRIPT',
+    tempo: '12',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'REACT: LIDANDO COM ARQUIVOS ESTÁTICOS',
+    tempo: '10',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'REACT: CONHECENDO A BIBLIOTECA REACT ROUTER',
+    tempo: '10',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'REACT ROUTER: NAVEGAÇÃO EM UMA SPA',
+    tempo: '8',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'REACT: GERENCIAMENTO DE ESTADOS GLOBAIS COM CONTEXTAPI',
+    tempo: '10',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'REACT: DESENVOLVENDO UMA BIBLIOTECA DE COMPONENTES',
+    tempo: '8',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'REACT: GERENCIAMENTO DE ESTADOS GLOBAIS COM REDUX',
+    tempo: '10',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'NEXT.JS: EXPLORANDO O FRAMEWORK',
+    tempo: '8',
+    escola: '(Alura)'
+  },
+  {
+    nome: 'REACT JS DO ZERO AO AVANÇADO NA PRÁTICA',
+    tempo: '23',
+    escola: '(Udemy)'
+  }
+]
