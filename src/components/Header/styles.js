@@ -1,12 +1,16 @@
 import styled from 'styled-components'
 
 export const Page = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  min-width: 100%;
+  height: 100vh;
 `
 
 export const Sidebar = styled.header`
-  min-width: 300px;
+  min-width: 250px;
   height: 100vh;
+  position: relative;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   background: rgba(10, 10, 10, 0.65);
@@ -29,13 +33,13 @@ export const Title = styled.div`
   margin-bottom: 40px;
 
   h3 {
-    font-size: 22px;
+    font-size: 18px;
     margin-bottom: 10px;
   }
 `
 
 export const Logo = styled.img`
-  width: 80px;
+  width: 70px;
   margin: 20px auto;
 `
 export const UlContent = styled.div`
@@ -47,7 +51,7 @@ export const UlContent = styled.div`
   ul {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
   }
 
   li {
@@ -55,7 +59,7 @@ export const UlContent = styled.div`
     align-items: center;
     gap: 20px;
     cursor: pointer;
-    padding: 10px 30px;
+    padding: 10px;
     transition: all 0.3s;
   }
 

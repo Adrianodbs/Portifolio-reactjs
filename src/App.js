@@ -1,12 +1,11 @@
 import Header from './components/Header'
-import Global from './Global'
+import './index.css'
 
 function App() {
   return (
-    <>
-      <Global />
+    <div>
       <Header />
-    </>
+    </div>
   )
 }
 
