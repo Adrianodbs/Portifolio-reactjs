@@ -37,7 +37,7 @@ export const Content = styled.div`
   border-radius: 8px;
   margin-top: 40px;
   width: 90%;
-  height: 75vh;
+  height: 70vh;
   overflow: scroll;
   ::-webkit-scrollbar-track {
     display: none;

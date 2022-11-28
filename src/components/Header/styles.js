@@ -87,11 +87,40 @@ export const UlContent = styled.div`
 //   }
 // `
 
-// export const Content = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   margin: 0 auto;
-//   width: 100%;
-// `
+export const Content = styled.div`
+  display: flex;
+  padding: 10px;
+`
+
+export const Redes = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+
+  @keyframes animate {
+    0%,
+    100% {
+      color: deeppink;
+    }
+
+    25% {
+      color: deepskyblue;
+    }
+
+    50% {
+      color: lawngreen;
+    }
+
+    75% {
+      color: yellow;
+    }
+  }
+
+  a svg:hover {
+    text-shadow: 0 0 15px;
+    animation: animate 1.5s infinite linear;
+  }
+`

@@ -4,9 +4,10 @@ import logo from '../../img/programador.png'
 //Icons
 import {
   AiOutlineHome,
-  AiOutlineMobile,
-  AiOutlineMail,
-  AiOutlineHtml5
+  AiOutlineHtml5,
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillInstagram
 } from 'react-icons/ai'
 import { TbBrandJavascript } from 'react-icons/tb'
 import { FaReact } from 'react-icons/fa'
@@ -75,13 +76,29 @@ function Header({ page }) {
             </li>
           </ul>
         </C.UlContent>
+        <C.Redes>
+          <a href="https://github.com/Adrianodbs" target="_blank">
+            <AiFillGithub size={45} color="#fff" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/adriano-alves-4294b2168/"
+            target="_blank"
+          >
+            <AiFillLinkedin size={45} color="#fff" />
+          </a>
+          <a href="https://www.instagram.com/_adrianoalvess_/" target="_blank">
+            <AiFillInstagram size={45} color="#fff" />
+          </a>
+        </C.Redes>
       </C.Sidebar>
 
-      {menu === 1 && <Home />}
-      {menu === 2 && <ProjetosJavaScript />}
-      {menu === 3 && <ReactPages />}
-      {menu === 4 && <HtmlCss />}
-      {menu === 5 && <Cursos />}
+      <C.Content>
+        {menu === 1 && <Home />}
+        {menu === 2 && <ProjetosJavaScript />}
+        {menu === 3 && <ReactPages />}
+        {menu === 4 && <HtmlCss />}
+        {menu === 5 && <Cursos />}
+      </C.Content>
     </C.Page>
   )
 }
