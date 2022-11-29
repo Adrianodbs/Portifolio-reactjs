@@ -11,7 +11,7 @@ export const Container = styled.div`
   min-width: 100%;
   border-radius: 8px;
 
-  @media (max-width: 850px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
   }
 `

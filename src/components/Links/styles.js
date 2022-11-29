@@ -15,7 +15,7 @@ export const Link = styled.a`
     opacity: 0.6;
   }
 
-  @media (max-width: 850px) {
+  @media (max-width: 1000px) {
     width: 90%;
     padding: 10px;
   }
@@ -26,6 +26,9 @@ export const Link = styled.a`
 
   img {
     width: 120px;
+    @media (max-width: 1000px) {
+      width: 80px;
+    }
     @media (max-width: 850px) {
       width: 60px;
     }
