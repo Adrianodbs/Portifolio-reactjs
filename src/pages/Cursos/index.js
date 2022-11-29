@@ -58,6 +58,10 @@ function Cursos() {
 }
 
 const CursoHtml = () => {
+  var soma = 0
+  for (var i = 0; i < CHtmlCss.length; i++) {
+    soma += CHtmlCss[i].tempo
+  }
   return (
     <div>
       {CHtmlCss.map(item => (
@@ -66,11 +70,19 @@ const CursoHtml = () => {
           <span>{item.escola}</span>
         </p>
       ))}
+      <br />
+      <p>
+        Tempo Total : <strong> {soma} Horas</strong>
+      </p>
     </div>
   )
 }
 
 const CursoJavaScript = () => {
+  var soma = 0
+  for (var i = 0; i < CJavascript.length; i++) {
+    soma += CJavascript[i].tempo
+  }
   return (
     <div>
       {CJavascript.map(item => (
@@ -79,11 +91,19 @@ const CursoJavaScript = () => {
           <span>{item.escola}</span>
         </p>
       ))}
+      <br />
+      <p>
+        Tempo Total : <strong> {soma} Horas</strong>
+      </p>
     </div>
   )
 }
 
 const CursoReact = () => {
+  var soma = 0
+  for (var i = 0; i < CReact.length; i++) {
+    soma += CReact[i].tempo
+  }
   return (
     <div>
       {CReact.map(item => (
@@ -92,11 +112,19 @@ const CursoReact = () => {
           <span>{item.escola}</span>
         </p>
       ))}
+      <br />
+      <p>
+        Tempo Total : <strong> {soma} Horas</strong>
+      </p>
     </div>
   )
 }
 
 const CursoMobile = () => {
+  var soma = 0
+  for (var i = 0; i < CMobile.length; i++) {
+    soma += CMobile[i].tempo
+  }
   return (
     <div>
       {CMobile.map(item => (
@@ -105,11 +133,19 @@ const CursoMobile = () => {
           <span>{item.escola}</span>
         </p>
       ))}
+      <br />
+      <p>
+        Tempo Total : <strong> {soma} Horas</strong>
+      </p>
     </div>
   )
 }
 
 const OutrosCursos = () => {
+  var soma = 0
+  for (var i = 0; i < COutrosCursos.length; i++) {
+    soma += COutrosCursos[i].tempo
+  }
   return (
     <div>
       {COutrosCursos.map(item => (
@@ -118,6 +154,10 @@ const OutrosCursos = () => {
           <span>{item.escola}</span>
         </p>
       ))}
+      <br />
+      <p>
+        Tempo Total : <strong> {soma} Horas</strong>
+      </p>
     </div>
   )
 }
