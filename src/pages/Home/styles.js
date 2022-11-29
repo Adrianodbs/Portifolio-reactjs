@@ -10,6 +10,9 @@ export const HomePage = styled.div`
   img {
     width: 200px;
     border-radius: 50%;
+    @media (max-width: 850px) {
+      width: 120px;
+    }
   }
 
   p {
@@ -18,5 +21,13 @@ export const HomePage = styled.div`
     text-align: center;
     font-size: 22px;
     font-weight: 500;
+    @media (max-width: 850px) {
+      width: 80%;
+      font-size: 19px;
+    }
+    @media (max-width: 430px) {
+      width: 90%;
+      font-size: 16px;
+    }
   }
 `
