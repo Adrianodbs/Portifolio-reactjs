@@ -5,11 +5,15 @@ export const Page = styled.div`
   grid-template-columns: 1fr 4fr;
   min-width: 100%;
   height: 100vh;
+
+  @media (max-width: 770px) {
+    grid-template-columns: 1fr 8fr;
+  }
 `
 
 export const Sidebar = styled.header`
   min-width: 250px;
-  height: 100vh;
+  max-height: 100vh;
   position: relative;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
@@ -19,11 +23,13 @@ export const Sidebar = styled.header`
   transition: 0.4s ease-in-out;
   color: #fff;
 
-  /* hr {
-    border: 0.5px solid rgba(255, 255, 255, 0.2);
-    margin: 10px 8px;
-    border-radius: 10px;
-  } */
+  @media (max-width: 850px) {
+    min-width: 200px;
+  }
+
+  @media (max-width: 770px) {
+    min-width: 50px;
+  }
 `
 
 export const Title = styled.div`
@@ -31,16 +37,25 @@ export const Title = styled.div`
   flex-direction: column;
   align-items: center;
   margin-bottom: 40px;
+  @media (max-width: 850px) {
+    margin-bottom: 20px;
+  }
 
   h3 {
     font-size: 18px;
     margin-bottom: 10px;
+    @media (max-width: 850px) {
+      display: none;
+    }
   }
 `
 
 export const Logo = styled.img`
   width: 70px;
   margin: 20px auto;
+  @media (max-width: 850px) {
+    width: 50px;
+  }
 `
 export const UlContent = styled.div`
   display: flex;
@@ -52,6 +67,10 @@ export const UlContent = styled.div`
     display: flex;
     flex-direction: column;
     gap: 10px;
+    @media (max-width: 770px) {
+      gap: 30px;
+      margin-top: 20px;
+    }
   }
 
   li {
@@ -70,22 +89,14 @@ export const UlContent = styled.div`
 
   span {
     font-size: 18px;
+    @media (max-width: 850px) {
+      font-size: 16px;
+    }
+    @media (max-width: 770px) {
+      display: none;
+    }
   }
 `
-
-// export const Contato = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   margin-top: 50px;
-//   p {
-//     margin-bottom: 15px;
-//     font-size: 14px;
-//     display: flex;
-//     align-items: center;
-//     gap: 10px;
-//   }
-// `
 
 export const Content = styled.div`
   display: flex;
@@ -99,6 +110,18 @@ export const Redes = styled.div`
   justify-content: center;
   gap: 30px;
   margin-top: 20px;
+
+  @media (max-width: 850px) {
+    svg {
+      width: 30px;
+    }
+  }
+
+  @media (max-width: 770px) {
+    svg {
+      display: none;
+    }
+  }
 
   @keyframes animate {
     0%,
