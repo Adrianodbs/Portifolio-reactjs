@@ -10,4 +10,8 @@ export const Container = styled.div`
   margin: auto;
   min-width: 100%;
   border-radius: 8px;
+
+  @media (max-width: 850px) {
+    flex-direction: column;
+  }
 `

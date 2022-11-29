@@ -15,7 +15,31 @@ export const Link = styled.a`
     opacity: 0.6;
   }
 
+  @media (max-width: 850px) {
+    width: 90%;
+    padding: 10px;
+  }
+
+  @media (max-width: 520px) {
+    gap: 40px;
+  }
+
   img {
     width: 120px;
+    @media (max-width: 850px) {
+      width: 60px;
+    }
+  }
+
+  h2 {
+    @media (max-width: 850px) {
+      font-size: 19px;
+    }
+  }
+
+  p {
+    @media (max-width: 520px) {
+      display: none;
+    }
   }
 `
