@@ -40,7 +40,7 @@ function Cursos() {
           Mobile
         </button>
         <button
-          className={`${menu === 5 ? 'active' : ''}`}
+          className={`${menu === 5 ? 'active' : ''} disable`}
           onClick={() => action(5)}
         >
           Outros Cursos

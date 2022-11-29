@@ -7,6 +7,12 @@ export const Cursos = styled.div`
   justify-content: flex-start;
   width: 100%;
 
+  .disable {
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
+
   ul {
     display: flex;
     align-items: center;
@@ -26,7 +32,16 @@ export const Cursos = styled.div`
     &:hover {
       opacity: 0.8;
     }
+    @media (max-width: 1030px) {
+      width: 100px;
+      font-size: 12px;
+    }
+
+    @media (max-width: 700px) {
+      padding: 5px 0;
+    }
   }
+
   button.active {
     background: #ff328e !important;
   }
@@ -64,6 +79,14 @@ export const Content = styled.div`
     border-bottom: 2px solid rgba(100, 100, 100, 0.9);
     margin-bottom: 10px;
     text-transform: uppercase;
+
+    @media (max-width: 900px) {
+      font-size: 15px;
+    }
+
+    @media (max-width: 700px) {
+      font-size: 13px;
+    }
   }
 
   strong {
