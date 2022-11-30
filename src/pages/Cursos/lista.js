@@ -224,6 +224,11 @@ export const CReact = [
     nome: 'REACT JS DO ZERO AO AVANÇADO NA PRÁTICA',
     tempo: 23,
     escola: '(Udemy)'
+  },
+  {
+    nome: 'React do zero a maestria (com hooks, router, API, projetos)',
+    tempo: 30,
+    escola: '(Udemy)'
   }
 ]
 
