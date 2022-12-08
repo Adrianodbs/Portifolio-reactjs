@@ -161,6 +161,11 @@ export const CJavascript = [
     nome: 'JAVASCRIPT: VALIDAÇÕES E RECONHECIMENTO DE VOZ',
     tempo: 6,
     escola: '(Alura)'
+  },
+  {
+    nome: 'JAVASCRIPT do básico ao avançado (Com Node.js e projetos)',
+    tempo: 24,
+    escola: '(Alura)'
   }
 ]
 
