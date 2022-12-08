@@ -165,7 +165,7 @@ export const CJavascript = [
   {
     nome: 'JAVASCRIPT do básico ao avançado (Com Node.js e projetos)',
     tempo: 24,
-    escola: '(Alura)'
+    escola: '(Udemy)'
   }
 ]
 
