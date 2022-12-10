@@ -70,6 +70,8 @@ export const Paginas = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
   }
 
   h4 {
