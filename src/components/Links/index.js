@@ -1,5 +1,4 @@
 import React from 'react'
-import pokeball from '../../img/pokeball.png'
 import { Link } from './styles'
 
 function Links({ img, titulo, descricao, url }) {
