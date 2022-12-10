@@ -20,7 +20,6 @@ import { useState } from 'react'
 import Home from '../../pages/Home'
 import ProjetosJavaScript from '../../pages/JavaScript'
 import ReactPages from '../../pages/React'
-import HtmlCss from '../../pages/HTML'
 import Cursos from '../../pages/Cursos'
 
 function Header({ page }) {
@@ -64,13 +63,6 @@ function Header({ page }) {
               className={`${menu === 4 ? 'active' : ''}`}
               onClick={() => action(4)}
             >
-              <AiOutlineHtml5 size={25} />
-              <span>Projetos HTML/CSS</span>
-            </li>
-            <li
-              className={`${menu === 5 ? 'active' : ''}`}
-              onClick={() => action(5)}
-            >
               <GoBook size={25} />
               <span>Cursos</span>
             </li>
@@ -96,8 +88,7 @@ function Header({ page }) {
         {menu === 1 && <Home />}
         {menu === 2 && <ProjetosJavaScript />}
         {menu === 3 && <ReactPages />}
-        {menu === 4 && <HtmlCss />}
-        {menu === 5 && <Cursos />}
+        {menu === 4 && <Cursos />}
       </C.Content>
     </C.Page>
   )
