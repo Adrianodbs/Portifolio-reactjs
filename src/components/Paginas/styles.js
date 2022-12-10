@@ -43,6 +43,10 @@ export const Paginas = styled.div`
     font-size: 30px;
     font-weight: bold;
     padding: 20px;
+    @media (max-width: 520px) {
+      font-size: 18px;
+      padding: 15px;
+    }
   }
 
   img {
@@ -56,5 +60,26 @@ export const Paginas = styled.div`
     text-align: center;
     font-size: 22px;
     margin-bottom: 15px;
+    @media (max-width: 520px) {
+      font-size: 16px;
+      width: 80%;
+    }
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    @media (max-width: 520px) {
+      font-size: 13px;
+    }
   }
 `

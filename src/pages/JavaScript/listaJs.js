@@ -3,20 +3,23 @@ export const ListaJavaScript = [
     nome: 'Mini-projetos',
     img: './img/miniprojeto.png',
     desrcricao: 'Seleção de mini-projetos, utilizando Html, css e JavaScript.',
-    url: 'https://adrianodbs.github.io/Mini-projetos/'
+    url: 'https://adrianodbs.github.io/Mini-projetos/',
+    tags: ['HTML', 'CSS', 'JavaScript']
   },
   {
     nome: 'Pokedex',
     img: './img/pokedex.png',
     desrcricao:
       'Projeto realizado com o auxílio do canal do Youtube "Dev em dobro", onde foi elaborado uma pokedex, utilizando HTML, CSS e JavaScript.',
-    url: 'https://adrianodbs.github.io/Pokedex/'
+    url: 'https://adrianodbs.github.io/Pokedex/',
+    tags: ['HTML', 'CSS', 'JavaScript']
   },
   {
     nome: 'Clone da página da Disney +',
     img: './img/disney.png',
     desrcricao:
       'Um clone da página da Disney + realizada com o auxílio do canal no Youtube "Hello Codes".',
-    url: 'https://adrianodbs.github.io/Clone-Disney/'
+    url: 'https://adrianodbs.github.io/Clone-Disney/',
+    tags: ['HTML', 'CSS', 'JavaScript']
   }
 ]

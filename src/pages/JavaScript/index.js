@@ -18,6 +18,11 @@ function ProjetosJavaScript() {
             <p>{projeto.nome}</p>
             <img src={projeto.img} alt={projeto.nome} />
             <span>{projeto.desrcricao}</span>
+            <div className="tags">
+              {projeto.tags.map(tag => (
+                <h4>{tag}</h4>
+              ))}
+            </div>
           </a>
         ))}
       </Paginas>
