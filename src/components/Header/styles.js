@@ -39,6 +39,7 @@ export const Sidebar = styled.header`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     padding: 0 20px;
   }
@@ -51,6 +52,10 @@ export const Title = styled.div`
   margin-bottom: 40px;
   @media (max-width: 850px) {
     margin-bottom: 20px;
+  }
+
+  @media (max-width: 600px) {
+    margin-bottom: 0;
   }
 
   h3 {
@@ -67,6 +72,10 @@ export const Logo = styled.img`
   margin: 20px auto;
   @media (max-width: 850px) {
     width: 50px;
+  }
+  @media (max-width: 600px) {
+    margin: 0;
+    padding: 5px 0;
   }
 `
 export const UlContent = styled.div`
@@ -87,6 +96,7 @@ export const UlContent = styled.div`
     @media (max-width: 600px) {
       display: flex;
       flex-direction: row;
+      margin-top: 0;
     }
   }
 
