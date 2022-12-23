@@ -9,6 +9,10 @@ export const Page = styled.div`
   @media (max-width: 770px) {
     grid-template-columns: 1fr 8fr;
   }
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
 `
 
 export const Sidebar = styled.header`
@@ -29,6 +33,14 @@ export const Sidebar = styled.header`
 
   @media (max-width: 770px) {
     min-width: 50px;
+  }
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
   }
 `
 
@@ -70,6 +82,11 @@ export const UlContent = styled.div`
     @media (max-width: 770px) {
       gap: 30px;
       margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      display: flex;
+      flex-direction: row;
     }
   }
 
@@ -118,9 +135,7 @@ export const Redes = styled.div`
   }
 
   @media (max-width: 770px) {
-    svg {
-      display: none;
-    }
+    display: none;
   }
 
   @keyframes animate {
