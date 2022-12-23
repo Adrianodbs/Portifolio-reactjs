@@ -18,6 +18,10 @@ export const Cursos = styled.div`
     align-items: center;
     gap: 10px;
     margin-top: 60px;
+
+    @media (max-width: 700px) {
+      gap: 5px;
+    }
   }
 
   button {
@@ -39,6 +43,8 @@ export const Cursos = styled.div`
 
     @media (max-width: 700px) {
       padding: 5px 0;
+      font-size: 11px;
+      width: 90px;
     }
   }
 
