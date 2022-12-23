@@ -26,7 +26,7 @@ export const Paginas = styled.div`
   }
   padding: 20px;
 
-  a {
+  .projeto-container {
     text-decoration: none;
     color: #fff;
     display: flex;
@@ -82,6 +82,22 @@ export const Paginas = styled.div`
     border-radius: 20px;
     @media (max-width: 520px) {
       font-size: 13px;
+    }
+  }
+
+  .repositorio {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #fff;
+    margin: 20px 0;
+    border-radius: 30px;
+    background-color: #000;
+    transition: all 0.4s;
+
+    &:hover {
+      opacity: 0.5;
     }
   }
 `
