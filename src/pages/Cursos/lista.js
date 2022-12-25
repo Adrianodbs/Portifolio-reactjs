@@ -234,6 +234,11 @@ export const CReact = [
     nome: 'React do zero a maestria (com hooks, router, API, projetos)',
     tempo: 30,
     escola: '(Udemy)'
+  },
+  {
+    nome: 'Projeto completo - NodeJs, React, React Native, TypeScript',
+    tempo: 24,
+    escola: '(Udemy)'
   }
 ]
 
@@ -257,6 +262,11 @@ export const CMobile = [
     nome: 'REACT NATIVE: UTILIZANDO WEB API',
     tempo: 8,
     escola: '(Alura)'
+  },
+  {
+    nome: 'Projeto completo - NodeJs, React, React Native, TypeScript',
+    tempo: 24,
+    escola: '(Udemy)'
   }
 ]
 
