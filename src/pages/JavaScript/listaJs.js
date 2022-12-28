@@ -50,5 +50,13 @@ export const ListaJavaScript = [
     url: 'https://adrianodbs.github.io/P-gina-de-cadastro-com-valida-o/',
     tags: ['HTML', 'CSS', 'JavaScript', 'Validação'],
     github: 'https://github.com/Adrianodbs/P-gina-de-cadastro-com-valida-o'
+  },
+  {
+    nome: 'Games Slide',
+    img: './img/slide-games.png',
+    desrcricao: 'Slide de games infinito',
+    url: 'https://slide-games.vercel.app/',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    github: 'https://github.com/Adrianodbs/Slide-Games'
   }
 ]
