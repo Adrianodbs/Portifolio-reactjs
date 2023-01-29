@@ -82,5 +82,14 @@ export const ListaReact = [
     img: './img/todo-type.png',
     tags: ['ReactJS', 'CSS', 'TypeScript'],
     github: 'https://github.com/Adrianodbs/Todo-typescript'
+  },
+  {
+    nome: 'API com destinos de viagem',
+    descricao:
+      '(Página com uma breve descrição de locais, onde foi implimentada a função de Show More e de delete, todos os dados foram retirados de uma API)',
+    url: 'https://react-resgatando-dados-de-api.vercel.app/',
+    img: './img/locais-api.png',
+    tags: ['ReactJS', 'CSS', 'API'],
+    github: 'https://github.com/Adrianodbs/react-resgatando-dados-de-API-'
   }
 ]
