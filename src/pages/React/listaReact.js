@@ -91,5 +91,14 @@ export const ListaReact = [
     img: './img/locais-api.png',
     tags: ['ReactJS', 'CSS', 'API'],
     github: 'https://github.com/Adrianodbs/react-resgatando-dados-de-API-'
+  },
+  {
+    nome: 'Minha carteira',
+    descricao:
+      '(Sistema de controles de finanças, com dashboard utilizando gráficos para demonstrar as entradas e as saídas.)',
+    url: 'https://minha-carteira-pi.vercel.app/',
+    img: './img/minha-carteira.png',
+    tags: ['ReactJS', 'Styled-Component', 'TypeScript'],
+    github: 'https://github.com/Adrianodbs/Minha-carteira'
   }
 ]
