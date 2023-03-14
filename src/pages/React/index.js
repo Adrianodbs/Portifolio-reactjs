@@ -1,6 +1,3 @@
-import React from 'react'
-import Links from '../../components/Links'
-import imgReact from '../../img/react.png'
 import { Container } from './styles'
 import { Paginas } from '../../components/Paginas/styles'
 

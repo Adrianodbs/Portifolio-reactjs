@@ -1,13 +1,7 @@
 import { Container } from './styles'
 import { Paginas } from '../../components/Paginas/styles'
 
-import disney from '../../img/disneyland.png'
-import pokeball from '../../img/pokeball.png'
-import lampada from '../../img/gerenciamento-de-projetos.png'
-
 import { ListaJavaScript } from './listaJs'
-
-import Links from '../../components/Links'
 
 function ProjetosJavaScript() {
   return (
