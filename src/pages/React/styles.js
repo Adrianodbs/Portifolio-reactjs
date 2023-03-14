@@ -10,6 +10,7 @@ export const Container = styled.div`
   margin: auto;
   min-width: 100%;
   border-radius: 8px;
+  height: 80vh;
 
   @media (max-width: 1000px) {
     flex-direction: column;
