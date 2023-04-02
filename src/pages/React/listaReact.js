@@ -100,5 +100,14 @@ export const ListaReact = [
     img: './img/minha-carteira.png',
     tags: ['ReactJS', 'Styled-Component', 'TypeScript'],
     github: 'https://github.com/Adrianodbs/Minha-carteira'
+  },
+  {
+    nome: 'Buscador de repositórios',
+    descricao:
+      '(Aplicação utilizando a API do GitHub, onde é possível encontrar repositórios.)',
+    url: 'https://buscador-de-reposit-rios.vercel.app/',
+    img: './img/repos.png',
+    tags: ['ReactJS', 'Styled-Component', 'API'],
+    github: 'https://github.com/Adrianodbs/Buscador-de-reposit-rios'
   }
 ]
