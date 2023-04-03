@@ -117,5 +117,13 @@ export const ListaReact = [
     img: './img/beleza-web.png',
     tags: ['ReactJS', 'CSS', 'API'],
     github: 'https://github.com/Adrianodbs/beleza-na-web'
+  },
+  {
+    nome: 'Bubble Coffee',
+    descricao: '(Página de uma cafeteria utilizando o Next.Js.)',
+    url: 'https://bubble-coffee.vercel.app/',
+    img: './img/bubble.png',
+    tags: ['ReactJS', 'SCSS', 'NextJS'],
+    github: 'https://github.com/Adrianodbs/bubble-coffee'
   }
 ]
