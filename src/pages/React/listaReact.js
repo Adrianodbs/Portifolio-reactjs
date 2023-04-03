@@ -109,5 +109,13 @@ export const ListaReact = [
     img: './img/repos.png',
     tags: ['ReactJS', 'Styled-Component', 'API'],
     github: 'https://github.com/Adrianodbs/Buscador-de-reposit-rios'
+  },
+  {
+    nome: 'Beleza na web (Teste técnico)',
+    descricao: '(Teste técnico feito para treinar as habilidades em react.)',
+    url: 'https://beleza-na-web-wine.vercel.app/',
+    img: './img/beleza-web.png',
+    tags: ['ReactJS', 'CSS', 'API'],
+    github: 'https://github.com/Adrianodbs/beleza-na-web'
   }
 ]
