@@ -125,5 +125,14 @@ export const ListaReact = [
     img: './img/bubble.png',
     tags: ['ReactJS', 'SCSS', 'NextJS'],
     github: 'https://github.com/Adrianodbs/bubble-coffee'
+  },
+  {
+    nome: 'CRUD CodeLeap',
+    descricao:
+      '(Desafio técnico proposto pela CodeLeap, onde foi criado um sistema de CRUD, utilizando o ReactJs, para estilização foi utilizado o CSS.)',
+    url: 'https://desafio-tecnico-codeleap.vercel.app/',
+    img: './img/codeleap.png',
+    tags: ['ReactJS', 'CSS'],
+    github: 'https://github.com/Adrianodbs/desafio-tecnico-codeleap'
   }
 ]
