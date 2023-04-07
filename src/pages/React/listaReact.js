@@ -17,14 +17,6 @@ export const ListaReact = [
     github: 'https://github.com/Adrianodbs/prime-flix'
   },
   {
-    nome: 'Portifólio',
-    descricao: '(Exemplo de um portifólio utilizando o React.)',
-    url: 'https://portifolio-react-gray.vercel.app/',
-    img: './img/portifolio.png',
-    tags: ['ReactJS', 'SCSS'],
-    github: 'https://github.com/Adrianodbs/portifolio-react'
-  },
-  {
     nome: 'Controle de finanças',
     descricao:
       '(Aplicação para calcular recebimento e despesas ao longo de um determindo período.)',
