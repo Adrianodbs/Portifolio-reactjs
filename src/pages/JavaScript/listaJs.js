@@ -35,15 +35,6 @@ export const ListaJavaScript = [
     github: 'https://github.com/Adrianodbs/Personagens-Marvel'
   },
   {
-    nome: 'Rede Social',
-    img: './img/rede-social.png',
-    desrcricao:
-      'Projeto de uma rede social com uma caixa de texto semelhante ao twitter, onde você pode publicar(Em construção).',
-    url: 'https://adrianodbs.github.io/Rede-social/',
-    tags: ['HTML', 'CSS', 'JavaScript', 'Projeto Pessoal'],
-    github: 'https://github.com/Adrianodbs/Rede-social'
-  },
-  {
     nome: 'Página de cadastro',
     img: './img/cadastro.png',
     desrcricao: 'Página de cadastro com validação de senha.',

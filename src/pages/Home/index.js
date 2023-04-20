@@ -14,8 +14,8 @@ function Home() {
           <h1>Desenvolvedor Front-End | React</h1>
           <p>
             Oi, me chamo Adriano Alves, tenho 29 anos, estudo programação desde
-            Outubro de 2021 e atualmente busco a transição de carreira para área
-            do desenvolvimento Front-End. Venho buscando desenvolver as minhas
+            Outubro de 2021 e atualmente estou cursando uma Pós Graduação em
+            desenvolvimento Full Stack. Venho buscando desenvolver as minhas
             habilidades em JavaScript, TypeScript e React.
           </p>
         </div>
