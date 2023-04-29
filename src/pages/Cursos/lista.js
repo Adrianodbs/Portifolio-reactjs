@@ -244,6 +244,11 @@ export const CReact = [
     nome: 'React e TypeScript: Desenvolvendo um dashboard',
     tempo: 17,
     escola: '(Udemy)'
+  },
+  {
+    nome: 'NextJS do zero ao avançado na pratica 2023',
+    tempo: 13,
+    escola: '(Udemy)'
   }
 ]
 
