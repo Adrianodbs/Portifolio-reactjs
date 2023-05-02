@@ -130,6 +130,11 @@ export const Paginas = styled.div`
       border-radius: 4px;
       font-size: 18px;
       font-weight: bold;
+      transition: all 0.2s;
+
+      &:hover {
+        opacity: 0.8;
+      }
 
       @media (max-width: 380px) {
         font-size: 14px;
