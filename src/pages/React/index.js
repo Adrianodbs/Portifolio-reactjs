@@ -1,5 +1,4 @@
-import { Container } from './styles'
-import { Paginas } from '../../components/Paginas/styles'
+import { Container, Paginas } from './styles'
 
 import { ListaReact } from './listaReact'
 
@@ -11,10 +10,11 @@ function ReactPages() {
           <a href={projeto.url} target="_blank" className="projeto-container">
             <p>{projeto.nome}</p>
             <img src={projeto.img} alt={projeto.nome} />
-            <span>{projeto.desrcricao}</span>
+            <span>{projeto.descricao}</span>
             <div className="tags">
+              <h5>Tecnologias: </h5>
               {projeto.tags.map(tag => (
-                <h4>{tag}</h4>
+                <h4 className="icons">{tag}</h4>
               ))}
             </div>
             <a href={projeto.github} target="_blank" className="repositorio">

@@ -1,3 +1,13 @@
+import { FaReact, FaCss3Alt, FaSass } from 'react-icons/fa'
+import {
+  SiFirebase,
+  SiRedux,
+  SiTypescript,
+  SiStyledcomponents,
+  SiHtml5
+} from 'react-icons/si'
+import { TbBrandNextjs, TbBrandJavascript } from 'react-icons/tb'
+
 export const ListaReact = [
   {
     nome: 'Sistema de Chamados',
@@ -5,15 +15,31 @@ export const ListaReact = [
       '(Sistema integrado com o Firebase, que permite cadastrar usuários, criar e editar chamados.)',
     url: 'https://sistema-de-chamados-six.vercel.app/dashboard',
     img: './img/sistema-de-chamados.png',
-    tags: ['ReactJS', 'useContext', 'CSS', 'Firebase'],
+    tags: [
+      <FaReact color="#61DAFB" />,
+      <FaCss3Alt color="#0070B8" />,
+      <SiFirebase color="#F7A213" />
+    ],
     github: 'https://github.com/Adrianodbs/sistema-de-chamados'
+  },
+  {
+    nome: 'Mini-projetos JavaScript',
+    img: './img/miniprojeto.png',
+    descricao: '(Seleção de mini-projetos, utilizando HTML, CSS e JavaScript.)',
+    url: 'https://adrianodbs.github.io/Mini-projetos/',
+    tags: [
+      <SiHtml5 color="#DD4B25" />,
+      <FaCss3Alt color="#0070B8" />,
+      <TbBrandJavascript color="#EFD81D" />
+    ],
+    github: 'https://github.com/Adrianodbs/Mini-projetos'
   },
   {
     nome: 'Prime-Flix',
     descricao: '(Uso de API em React.)',
     url: 'https://prime-flix-three.vercel.app/',
     img: './img/prime_flix.png',
-    tags: ['ReactJS', 'CSS', 'API'],
+    tags: [<FaReact color="#61DAFB" />, <FaCss3Alt color="#0070B8" />],
     github: 'https://github.com/Adrianodbs/prime-flix'
   },
   {
@@ -22,16 +48,45 @@ export const ListaReact = [
       '(Aplicação para calcular recebimento e despesas ao longo de um determindo período.)',
     url: 'https://controle-de-finan-as-react.vercel.app/',
     img: './img/controle-financas.png',
-    tags: ['ReactJS', 'CSS'],
+    tags: [<FaReact color="#61DAFB" />, <FaCss3Alt color="#0070B8" />],
     github: 'https://github.com/Adrianodbs/controle-de-finan-as-react'
+  },
+  {
+    nome: 'Clone da página da Disney +',
+    img: './img/disney.png',
+    descricao:
+      '(Um clone da página da Disney + realizada com o auxílio do canal no Youtube "Hello Codes".)',
+    url: 'https://adrianodbs.github.io/Clone-Disney/',
+    tags: [
+      <SiHtml5 color="#DD4B25" />,
+      <FaCss3Alt color="#0070B8" />,
+      <TbBrandJavascript color="#EFD81D" />
+    ],
+    github: 'https://github.com/Adrianodbs/Clone-Disney'
+  },
+  {
+    nome: 'Games Slide',
+    img: './img/slide-games.png',
+    descricao: '(Slide de games infinito)',
+    url: 'https://slide-games.vercel.app/',
+    tags: [
+      <SiHtml5 color="#DD4B25" />,
+      <FaCss3Alt color="#0070B8" />,
+      <TbBrandJavascript color="#EFD81D" />
+    ],
+    github: 'https://github.com/Adrianodbs/Slide-Games'
   },
   {
     nome: 'Dicionário de inglês',
     descricao:
-      '(Aplicação onde você cadastra uma palavra, sua tradução e uma aplicação em frase.)',
+      '(Aplicação onde você cadastra uma palavra, sua tradução e uma aplicação em frase, também foi incluído um sistema de patentes.)',
     url: 'https://ingles-react.vercel.app/',
     img: './img/ingles.png',
-    tags: ['ReactJS', 'CSS', 'Projeto Pessoal', 'Firebase'],
+    tags: [
+      <FaReact color="#61DAFB" />,
+      <FaCss3Alt />,
+      <SiFirebase color="#F7A213" />
+    ],
     github: 'https://github.com/Adrianodbs/ingl-s-react'
   },
   {
@@ -39,7 +94,11 @@ export const ListaReact = [
     descricao: '(Aplicação utilizando ReactJs e Firebase.)',
     url: 'https://miniblog-kohl.vercel.app/',
     img: './img/miniblog.png',
-    tags: ['ReactJS', 'CSS', 'Firebase'],
+    tags: [
+      <FaReact color="#61DAFB" />,
+      <FaCss3Alt />,
+      <SiFirebase color="#F7A213" />
+    ],
     github: 'https://github.com/Adrianodbs/MiniBlog-react'
   },
   {
@@ -47,7 +106,7 @@ export const ListaReact = [
     descricao: '(Adivinhe a palavra secreta.)',
     url: 'https://palavra-secreta-react.vercel.app/',
     img: './img/palavra-secreta.png',
-    tags: ['ReactJS', 'CSS'],
+    tags: [<FaReact color="#61DAFB" />, <FaCss3Alt />],
     github: 'https://github.com/Adrianodbs/Palavra-secreta-react'
   },
   {
@@ -55,7 +114,7 @@ export const ListaReact = [
     descricao: '(Aplicação utilizando React Redux.)',
     url: 'https://react-gerenciamento-de-estados-globais-com-redux-z3e9.vercel.app/',
     img: './img/trato-tech.png',
-    tags: ['ReactJS', 'CSS', 'Redux'],
+    tags: [<FaReact color="#61DAFB" />, <FaCss3Alt />, <SiRedux />],
     github:
       'https://github.com/Adrianodbs/React-gerenciamento-de-estados-globais-com-Redux'
   },
@@ -64,7 +123,7 @@ export const ListaReact = [
     descricao: '(Projeto pessoal.)',
     url: 'https://villa-dos-bolos.vercel.app/',
     img: './img/Vila-dos-bolos.png',
-    tags: ['ReactJS', 'CSS', 'Projeto Pessoal'],
+    tags: [<FaReact color="#61DAFB" />, <FaCss3Alt />],
     github: 'https://github.com/Adrianodbs/Prejeto-react-agosto'
   },
   {
@@ -72,7 +131,11 @@ export const ListaReact = [
     descricao: '(Projeto simples para desenvolver habilidades em typescript)',
     url: 'https://todo-typescript-tan.vercel.app/',
     img: './img/todo-type.png',
-    tags: ['ReactJS', 'CSS', 'TypeScript'],
+    tags: [
+      <FaReact color="#61DAFB" />,
+      <FaCss3Alt />,
+      <SiTypescript color="#0076C6" />
+    ],
     github: 'https://github.com/Adrianodbs/Todo-typescript'
   },
   {
@@ -81,7 +144,7 @@ export const ListaReact = [
       '(Página com uma breve descrição de locais, onde foi implimentada a função de Show More e de delete, todos os dados foram retirados de uma API)',
     url: 'https://react-resgatando-dados-de-api.vercel.app/',
     img: './img/locais-api.png',
-    tags: ['ReactJS', 'CSS', 'API'],
+    tags: [<FaReact color="#61DAFB" />, <FaCss3Alt />],
     github: 'https://github.com/Adrianodbs/react-resgatando-dados-de-API-'
   },
   {
@@ -90,7 +153,11 @@ export const ListaReact = [
       '(Sistema de controles de finanças, com dashboard utilizando gráficos para demonstrar as entradas e as saídas.)',
     url: 'https://minha-carteira-pi.vercel.app/',
     img: './img/minha-carteira.png',
-    tags: ['ReactJS', 'Styled-Component', 'TypeScript'],
+    tags: [
+      <FaReact color="#61DAFB" />,
+      <SiStyledcomponents color="#D06EAA" />,
+      <SiTypescript color="#0076C6" />
+    ],
     github: 'https://github.com/Adrianodbs/Minha-carteira'
   },
   {
@@ -99,7 +166,7 @@ export const ListaReact = [
       '(Aplicação utilizando a API do GitHub, onde é possível encontrar repositórios.)',
     url: 'https://buscador-de-reposit-rios.vercel.app/',
     img: './img/repos.png',
-    tags: ['ReactJS', 'Styled-Component', 'API'],
+    tags: [<FaReact color="#61DAFB" />, <SiStyledcomponents color="#D06EAA" />],
     github: 'https://github.com/Adrianodbs/Buscador-de-reposit-rios'
   },
   {
@@ -107,7 +174,7 @@ export const ListaReact = [
     descricao: '(Teste técnico feito para treinar as habilidades em react.)',
     url: 'https://beleza-na-web-wine.vercel.app/',
     img: './img/beleza-web.png',
-    tags: ['ReactJS', 'CSS', 'API'],
+    tags: [<FaReact color="#61DAFB" />, <FaCss3Alt color="#0070B8" />],
     github: 'https://github.com/Adrianodbs/beleza-na-web'
   },
   {
@@ -115,7 +182,11 @@ export const ListaReact = [
     descricao: '(Página de uma cafeteria utilizando o Next.Js.)',
     url: 'https://bubble-coffee.vercel.app/',
     img: './img/bubble.png',
-    tags: ['ReactJS', 'SCSS', 'NextJS'],
+    tags: [
+      <FaReact color="#61DAFB" />,
+      <FaSass color="#C76494" />,
+      <TbBrandNextjs />
+    ],
     github: 'https://github.com/Adrianodbs/bubble-coffee'
   },
   {
@@ -124,7 +195,7 @@ export const ListaReact = [
       '(Desafio técnico proposto pela CodeLeap, onde foi criado um sistema de CRUD, utilizando o ReactJs, para estilização foi utilizado o CSS.)',
     url: 'https://desafio-tecnico-codeleap.vercel.app/',
     img: './img/codeleap.png',
-    tags: ['ReactJS', 'CSS'],
+    tags: [<FaReact color="#61DAFB" />, <FaCss3Alt color="#0070B8" />],
     github: 'https://github.com/Adrianodbs/desafio-tecnico-codeleap'
   },
   {
@@ -133,7 +204,11 @@ export const ListaReact = [
       '(CRUD onde é necessário logar com conta do google para adicionar tarefas e ver as tarefas públicas.)',
     url: 'https://tarefas-next.vercel.app/',
     img: './img/tarefas.png',
-    tags: ['NextJS', 'TypeScript', 'Firebase'],
+    tags: [
+      <TbBrandNextjs />,
+      <SiTypescript color="#0076C6" />,
+      <SiFirebase color="#F7A213" />
+    ],
     github: 'https://github.com/Adrianodbs/Tarefas-Next'
   }
 ]

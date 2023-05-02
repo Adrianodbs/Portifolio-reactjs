@@ -4,12 +4,10 @@ import logo from '../../img/programador.png'
 //Icons
 import {
   AiOutlineHome,
-  AiOutlineHtml5,
   AiFillGithub,
   AiFillLinkedin,
   AiFillInstagram
 } from 'react-icons/ai'
-import { TbBrandJavascript } from 'react-icons/tb'
 import { FaReact } from 'react-icons/fa'
 import { GoBook } from 'react-icons/go'
 
@@ -18,11 +16,10 @@ import { useState } from 'react'
 
 //Pages
 import Home from '../../pages/Home'
-import ProjetosJavaScript from '../../pages/JavaScript'
 import ReactPages from '../../pages/React'
 import Cursos from '../../pages/Cursos'
 
-function Header({ page }) {
+function Header() {
   const [menu, setMenu] = useState(1)
 
   const action = index => {
@@ -45,23 +42,17 @@ function Header({ page }) {
               <AiOutlineHome size={25} />
               <span>Home</span>
             </li>
+
             <li
               className={`${menu === 2 ? 'active' : ''}`}
               onClick={() => action(2)}
             >
-              <TbBrandJavascript size={25} />
-              <span>Projetos JavaScript</span>
+              <FaReact size={25} />
+              <span>Projetos Pessoais</span>
             </li>
             <li
               className={`${menu === 3 ? 'active' : ''}`}
               onClick={() => action(3)}
-            >
-              <FaReact size={25} />
-              <span>Projetos React</span>
-            </li>
-            <li
-              className={`${menu === 4 ? 'active' : ''}`}
-              onClick={() => action(4)}
             >
               <GoBook size={25} />
               <span>Cursos</span>
@@ -86,9 +77,8 @@ function Header({ page }) {
 
       <C.Content>
         {menu === 1 && <Home />}
-        {menu === 2 && <ProjetosJavaScript />}
-        {menu === 3 && <ReactPages />}
-        {menu === 4 && <Cursos />}
+        {menu === 2 && <ReactPages />}
+        {menu === 3 && <Cursos />}
       </C.Content>
     </C.Page>
   )
