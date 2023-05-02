@@ -8,32 +8,20 @@ import {
 } from 'react-icons/si'
 import { TbBrandNextjs, TbBrandJavascript } from 'react-icons/tb'
 
-const getIconByTag = tag => {
-  switch (tag) {
-    case 'react':
-      return <FaReact color="#61DAFB" />
-    case 'css':
-      return <FaCss3Alt color="#0070B8" />
-    case 'firebase':
-      return <SiFirebase color="#F7A213" />
-    case 'html':
-      return <SiHtml5 color="#DD4B25" />
-    case 'javascript':
-      return <TbBrandJavascript color="#EFD81D" />
-    case 'redux':
-      return <SiRedux color="#7749BD" />
-    case 'typescript':
-      return <SiTypescript color="#0076C6" />
-    case 'styled-components':
-      return <SiStyledcomponents color="#D06EAA" />
-    case 'sass':
-      return <FaSass color="#C76494" />
-    case 'nextjs':
-      return <TbBrandNextjs color="#000" />
-    default:
-      return null
-  }
+const iconsByTag = {
+  react: <FaReact color="#61DAFB" />,
+  css: <FaCss3Alt color="#0070B8" />,
+  firebase: <SiFirebase color="#F7A213" />,
+  html: <SiHtml5 color="#DD4B25" />,
+  javascript: <TbBrandJavascript color="#EFD81D" />,
+  redux: <SiRedux color="#7749BD" />,
+  typescript: <SiTypescript color="#0076C6" />,
+  'styled-components': <SiStyledcomponents color="#D06EAA" />,
+  sass: <FaSass color="#C76494" />,
+  nextjs: <TbBrandNextjs color="#000" />
 }
+
+const getIconByTag = tag => iconsByTag[tag] || null
 
 export const ListaReact = [
   {
