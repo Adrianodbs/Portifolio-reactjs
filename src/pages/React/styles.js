@@ -92,14 +92,6 @@ export const Paginas = styled.div`
     height: 100%;
   }
 
-  h5 {
-    font-size: 22px;
-
-    @media (max-width: 520px) {
-      font-size: 18px;
-    }
-  }
-
   .icons {
     display: flex;
     justify-content: center;
@@ -109,26 +101,40 @@ export const Paginas = styled.div`
     font-size: 30px;
     margin-bottom: 10px;
 
-    color: #ff328e;
-
     @media (max-width: 520px) {
       font-size: 20px;
     }
   }
 
   .repositorio {
-    text-decoration: none;
-    padding: 10px 20px;
-    color: #fff;
-    font-weight: bold;
-    border: 1px solid #fff;
-    margin: 20px 0;
-    border-radius: 30px;
-    background-color: #000;
-    transition: all 0.4s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    margin-top: 20px;
 
-    &:hover {
-      opacity: 0.5;
+    @media (max-width: 380px) {
+      gap: 5px;
+    }
+
+    a {
+      text-decoration: none;
+      border: 1px solid #fff;
+      padding: 5px;
+      min-width: 100px;
+      text-align: center;
+      background-color: #fff;
+      color: #000;
+      border-radius: 4px;
+      font-size: 18px;
+      font-weight: bold;
+
+      @media (max-width: 380px) {
+        font-size: 14px;
+        min-width: 70px;
+      }
     }
   }
 `

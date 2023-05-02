@@ -6,21 +6,27 @@ function ReactPages() {
   return (
     <Container>
       <Paginas>
-        {ListaReact.map(projeto => (
-          <a href={projeto.url} target="_blank" className="projeto-container">
+        {ListaReact.map((projeto, index) => (
+          <div key={index} className="projeto-container">
             <p>{projeto.nome}</p>
             <img src={projeto.img} alt={projeto.nome} />
             <span>{projeto.descricao}</span>
             <div className="tags">
-              <h5>Tecnologias: </h5>
-              {projeto.tags.map(tag => (
-                <h4 className="icons">{tag}</h4>
+              {projeto.tags.map((tag, index) => (
+                <h4 key={index} className="icons">
+                  {tag}
+                </h4>
               ))}
             </div>
-            <a href={projeto.github} target="_blank" className="repositorio">
-              Link do repositório
-            </a>
-          </a>
+            <div className="repositorio">
+              <a href={projeto.url} target="_blank">
+                Site
+              </a>
+              <a href={projeto.github} target="_blank">
+                Repositório
+              </a>
+            </div>
+          </div>
         ))}
       </Paginas>
     </Container>
