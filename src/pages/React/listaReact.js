@@ -187,5 +187,14 @@ export const ListaReact = [
     img: './img/tarefas.png',
     tags: ['nextjs', 'typescript', 'firebase'].map(tag => getIconByTag(tag)),
     github: 'https://github.com/Adrianodbs/Tarefas-Next'
+  },
+  {
+    nome: 'Reserva de viagens',
+    descricao:
+      '(Aplicação onde foi utilizado o redux para a solicitação de reservas de viagem.)',
+    url: 'https://reservas-com-redux.vercel.app/',
+    img: './img/reservas.png',
+    tags: ['react', 'css', 'redux'].map(tag => getIconByTag(tag)),
+    github: 'https://github.com/Adrianodbs/Reservas-com-redux'
   }
 ]
