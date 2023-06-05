@@ -25,12 +25,14 @@ const getIconByTag = tag => iconsByTag[tag] || null
 
 export const ProfessionalList = [
   {
-    nome: 'Sistema de Chamados',
+    nome: 'Centro Espírita',
     descricao:
-      '(Sistema integrado com o Firebase, que permite cadastrar usuários, criar e editar chamados.)',
-    url: 'https://sistema-de-chamados-six.vercel.app/dashboard',
-    img: './img/sistema-de-chamados.png',
-    tags: ['react', 'css', 'firebase'].map(tag => getIconByTag(tag)),
-    github: 'https://github.com/Adrianodbs/sistema-de-chamados'
+      '(Sistema integrado com o Firebase, que permite criar e editar posts.)',
+    url: 'https://centro-espirita-teles-de-menezes.vercel.app/',
+    img: './img/centro.png',
+    tags: ['react', 'styled-components', 'firebase'].map(tag =>
+      getIconByTag(tag)
+    ),
+    github: 'https://github.com/Adrianodbs/Centro-espirita-teles-de-menezes'
   }
 ]
