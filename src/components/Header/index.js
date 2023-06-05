@@ -11,6 +11,7 @@ import {
 } from 'react-icons/ai'
 import { FaReact } from 'react-icons/fa'
 import { GoBook } from 'react-icons/go'
+import { GiNotebook } from 'react-icons/gi'
 
 //Hooks
 import { useState } from 'react'
@@ -20,6 +21,7 @@ import Home from '../../pages/Home'
 import PersonalListContainer from '../../pages/Personal'
 import Cursos from '../../pages/Cursos'
 import ProfessionalListContainer from '../../pages/Professional'
+import CourseListContainer from '../../pages/CourseProjects'
 
 function Header() {
   const [menu, setMenu] = useState(1)
@@ -63,6 +65,13 @@ function Header() {
               className={`${menu === 4 ? 'active' : ''}`}
               onClick={() => action(4)}
             >
+              <GiNotebook size={25} />
+              <span>Projetos de cursos</span>
+            </li>
+            <li
+              className={`${menu === 5 ? 'active' : ''}`}
+              onClick={() => action(5)}
+            >
               <GoBook size={25} />
               <span>Cursos</span>
             </li>
@@ -88,7 +97,8 @@ function Header() {
         {menu === 1 && <Home />}
         {menu === 2 && <PersonalListContainer />}
         {menu === 3 && <ProfessionalListContainer />}
-        {menu === 4 && <Cursos />}
+        {menu === 4 && <CourseListContainer />}
+        {menu === 5 && <Cursos />}
       </C.Content>
     </C.Page>
   )
