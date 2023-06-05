@@ -23,7 +23,7 @@ const iconsByTag = {
 
 const getIconByTag = tag => iconsByTag[tag] || null
 
-export const ListaReact = [
+export const PersonalList = [
   {
     nome: 'Sistema de Chamados',
     descricao:

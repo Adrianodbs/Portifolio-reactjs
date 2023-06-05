@@ -6,7 +6,8 @@ import {
   AiOutlineHome,
   AiFillGithub,
   AiFillLinkedin,
-  AiFillInstagram
+  AiFillInstagram,
+  AiOutlineDollarCircle
 } from 'react-icons/ai'
 import { FaReact } from 'react-icons/fa'
 import { GoBook } from 'react-icons/go'
@@ -16,8 +17,9 @@ import { useState } from 'react'
 
 //Pages
 import Home from '../../pages/Home'
-import ReactPages from '../../pages/React'
+import PersonalListContainer from '../../pages/Personal'
 import Cursos from '../../pages/Cursos'
+import ProfessionalListContainer from '../../pages/Professional'
 
 function Header() {
   const [menu, setMenu] = useState(1)
@@ -54,6 +56,13 @@ function Header() {
               className={`${menu === 3 ? 'active' : ''}`}
               onClick={() => action(3)}
             >
+              <AiOutlineDollarCircle size={25} />
+              <span>Projetos Profissionais</span>
+            </li>
+            <li
+              className={`${menu === 4 ? 'active' : ''}`}
+              onClick={() => action(4)}
+            >
               <GoBook size={25} />
               <span>Cursos</span>
             </li>
@@ -77,8 +86,9 @@ function Header() {
 
       <C.Content>
         {menu === 1 && <Home />}
-        {menu === 2 && <ReactPages />}
-        {menu === 3 && <Cursos />}
+        {menu === 2 && <PersonalListContainer />}
+        {menu === 3 && <ProfessionalListContainer />}
+        {menu === 4 && <Cursos />}
       </C.Content>
     </C.Page>
   )

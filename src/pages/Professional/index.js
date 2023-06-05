@@ -1,12 +1,22 @@
-import { Container, Paginas } from './styles'
+import { Container, Paginas } from '../../components/Projects/styles'
 
-import { ListaReact } from './listaReact'
+import { ProfessionalList } from '../../components/List/professionalList'
 
-function ReactPages() {
+export default function ProfessionalListContainer() {
   return (
     <Container>
       <Paginas>
-        {ListaReact.map((projeto, index) => (
+        <h2
+          style={{
+            color: '#fff',
+            alignSelf: 'center',
+            padding: '10px',
+            fontSize: '22px'
+          }}
+        >
+          PROJETOS PROFISSIONAIS.
+        </h2>
+        {ProfessionalList.map((projeto, index) => (
           <div key={index} className="projeto-container">
             <p>{projeto.nome}</p>
             <img src={projeto.img} alt={projeto.nome} />
@@ -32,5 +42,3 @@ function ReactPages() {
     </Container>
   )
 }
-
-export default ReactPages
