@@ -77,6 +77,9 @@ export const Logo = styled.img`
     margin: 0;
     padding: 5px 0;
   }
+  @media (max-width: 500px) {
+    display: none;
+  }
 `
 export const UlContent = styled.div`
   display: flex;
