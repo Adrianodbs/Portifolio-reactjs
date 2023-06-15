@@ -69,5 +69,14 @@ export const PersonalList = [
     img: './img/codeleap.png',
     tags: ['react', 'css'].map(tag => getIconByTag(tag)),
     github: 'https://github.com/Adrianodbs/desafio-tecnico-codeleap'
+  },
+  {
+    nome: 'Pigz (Desafio técnico - Versão tela mobile)',
+    descricao:
+      '(Desafio técnico proposto pela Pigz, onde foi desenvolvida uma tela mobile com algumas interações)',
+    url: 'https://desafio-tecnico-pigz.vercel.app/',
+    img: './img/pigz.png',
+    tags: ['react', 'styled-components'].map(tag => getIconByTag(tag)),
+    github: 'https://github.com/Adrianodbs/desafio-tecnico-09-06'
   }
 ]
