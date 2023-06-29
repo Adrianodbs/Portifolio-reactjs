@@ -78,5 +78,13 @@ export const PersonalList = [
     img: './img/pigz.png',
     tags: ['react', 'styled-components'].map(tag => getIconByTag(tag)),
     github: 'https://github.com/Adrianodbs/desafio-tecnico-09-06'
+  },
+  {
+    nome: 'Arte no Panno (Em andamento)',
+    descricao: '(Site de uma loja de arte.)',
+    url: 'https://arte-no-panno-react.vercel.app/',
+    img: './img/arte.png',
+    tags: ['react', 'styled-components'].map(tag => getIconByTag(tag)),
+    github: 'https://github.com/Adrianodbs/Arte-no-panno-react'
   }
 ]
