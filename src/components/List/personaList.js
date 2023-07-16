@@ -25,6 +25,14 @@ const getIconByTag = tag => iconsByTag[tag] || null
 
 export const PersonalList = [
   {
+    nome: 'Super Trunfo',
+    img: './img/supertrunfo.png',
+    descricao: '(Jogo de super trunfo desenvolvido com React.)',
+    url: 'https://supertrunfo-react.vercel.app/',
+    tags: ['react', 'styled-components'].map(tag => getIconByTag(tag)),
+    github: 'https://github.com/Adrianodbs/supertrunfo-react'
+  },
+  {
     nome: 'Mini-projetos JavaScript',
     img: './img/miniprojeto.png',
     descricao: '(Seleção de mini-projetos, utilizando HTML, CSS e JavaScript.)',
