@@ -52,15 +52,6 @@ export const PersonalList = [
   },
 
   {
-    nome: 'Villa dos bolos',
-    descricao: '(Projeto pessoal.)',
-    url: 'https://villa-dos-bolos.vercel.app/',
-    img: './img/Vila-dos-bolos.png',
-    tags: ['react', 'css'].map(tag => getIconByTag(tag)),
-    github: 'https://github.com/Adrianodbs/Prejeto-react-agosto'
-  },
-
-  {
     nome: 'Beleza na web (Teste técnico)',
     descricao: '(Teste técnico feito para treinar as habilidades em react.)',
     url: 'https://beleza-na-web-wine.vercel.app/',
@@ -78,15 +69,7 @@ export const PersonalList = [
     tags: ['react', 'css'].map(tag => getIconByTag(tag)),
     github: 'https://github.com/Adrianodbs/desafio-tecnico-codeleap'
   },
-  {
-    nome: 'Pigz (Desafio técnico - Versão tela mobile)',
-    descricao:
-      '(Desafio técnico proposto pela Pigz, onde foi desenvolvida uma tela mobile com algumas interações)',
-    url: 'https://desafio-tecnico-pigz.vercel.app/',
-    img: './img/pigz.png',
-    tags: ['react', 'styled-components'].map(tag => getIconByTag(tag)),
-    github: 'https://github.com/Adrianodbs/desafio-tecnico-09-06'
-  },
+
   {
     nome: 'Arte no Panno (Em andamento)',
     descricao: '(Site de uma loja de arte.)',
