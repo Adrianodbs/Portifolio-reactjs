@@ -23,10 +23,10 @@ const iconsByTag = {
 
 const getIconByTag = tag => iconsByTag[tag] || null
 
-export const ProfessionalList = [
+export const MainList = [
   {
-    nome: 'Centro Espírita',
-    descricao:
+    title: 'Centro Espírita',
+    description:
       '(Sistema integrado com o Firebase, que permite criar e editar posts.)',
     url: 'https://centro-espirita-teles-de-menezes.vercel.app/',
     img: './img/centro.png',

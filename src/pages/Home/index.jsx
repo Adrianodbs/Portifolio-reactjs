@@ -9,6 +9,7 @@ import {
   SiSpring
 } from 'react-icons/si'
 import ButtonLink from '../../components/ButtonLink'
+import DemoProjects from '../../components/DemoProjects'
 
 function Home() {
   return (
@@ -28,6 +29,11 @@ function Home() {
           LinkedIn
         </ButtonLink>
       </C.Links>
+      <C.Projects>
+        <h2>Aqui estão alguns dos meus principais projetos...</h2>
+
+        <DemoProjects />
+      </C.Projects>
     </C.Container>
   )
 }

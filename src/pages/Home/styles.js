@@ -5,6 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #fff;
 `
 
 export const Title = styled.div`
@@ -33,4 +34,14 @@ export const Links = styled.div`
   display: flex;
   padding: 12px;
   gap: 24px;
+`
+
+export const Projects = styled.div`
+  margin: 24px auto;
+
+  h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
 `

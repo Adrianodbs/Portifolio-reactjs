@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-export default function ButtonLink({ link, children, ...props }) {
+export default function ButtonLink({ link, children }) {
   return (
-    <BtnLink {...props}>
+    <BtnLink>
       <a href={link} target="_blank" rel="noopener noreferrer">
         {children}
       </a>
@@ -28,5 +28,6 @@ const BtnLink = styled.button`
     font-size: 24px;
     background-color: transparent;
     text-decoration: none;
+    color: #fff;
   }
 `
