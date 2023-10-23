@@ -1,10 +1,10 @@
-import Header from './components/Header'
-import './index.css'
+import './global.css'
+import AppRoute from './routes'
 
 function App() {
   return (
     <div>
-      <Header />
+      <AppRoute />
     </div>
   )
 }
