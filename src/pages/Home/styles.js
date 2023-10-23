@@ -29,4 +29,8 @@ export const Title = styled.div`
   }
 `
 
-export const Links = styled.div``
+export const Links = styled.div`
+  display: flex;
+  padding: 12px;
+  gap: 24px;
+`

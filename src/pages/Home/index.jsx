@@ -8,6 +8,7 @@ import {
   SiTailwindcss,
   SiSpring
 } from 'react-icons/si'
+import ButtonLink from '../../components/ButtonLink'
 
 function Home() {
   return (
@@ -21,7 +22,12 @@ function Home() {
           <span>Front-End / Mobile</span>
         </h1>
       </C.Title>
-      <C.Links></C.Links>
+      <C.Links>
+        <ButtonLink link="https://github.com/Adrianodbs">GitHub</ButtonLink>
+        <ButtonLink link="https://www.linkedin.com/in/adriano-alves-4294b2168/">
+          LinkedIn
+        </ButtonLink>
+      </C.Links>
     </C.Container>
   )
 }
