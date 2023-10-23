@@ -1,4 +1,3 @@
-import foto from '../../img/perfil2.jpg'
 import * as C from './styles'
 
 import { FaReact, FaJava, FaSass } from 'react-icons/fa'
