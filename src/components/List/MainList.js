@@ -34,5 +34,52 @@ export const MainList = [
       getIconByTag(tag)
     ),
     github: 'https://github.com/Adrianodbs/Centro-espirita-teles-de-menezes'
+  },
+  {
+    title: 'YouFood',
+    img: './img/youfood.png',
+    description:
+      '(Projeto realizado em um teste técnico, onde foi preciso consumir uma API.)',
+    url: 'https://food-recipes-blond.vercel.app/',
+    tags: ['react', 'styled-components', 'typescript'].map(tag =>
+      getIconByTag(tag)
+    ),
+    github: 'https://github.com/Adrianodbs/Food-recipes'
+  },
+  {
+    title: 'Super Trunfo',
+    img: './img/supertrunfo.png',
+    description: '(Jogo de super trunfo desenvolvido com React.)',
+    url: 'https://supertrunfo-react.vercel.app/',
+    tags: ['react', 'styled-components'].map(tag => getIconByTag(tag)),
+    github: 'https://github.com/Adrianodbs/supertrunfo-react'
+  },
+  {
+    title: 'Mini-projetos JavaScript',
+    img: './img/miniprojeto.png',
+    description:
+      '(Seleção de mini-projetos, utilizando HTML, CSS e JavaScript.)',
+    url: 'https://adrianodbs.github.io/Mini-projetos/',
+    tags: ['html', 'css', 'javascript'].map(tag => getIconByTag(tag)),
+    github: 'https://github.com/Adrianodbs/Mini-projetos'
+  },
+
+  {
+    title: 'Dicionário de inglês',
+    description:
+      '(Aplicação onde você cadastra uma palavra, sua tradução e uma aplicação em frase, também foi incluído um sistema de patentes.)',
+    url: 'https://ingles-react.vercel.app/',
+    img: './img/ingles.png',
+    tags: ['react', 'css', 'firebase'].map(tag => getIconByTag(tag)),
+    github: 'https://github.com/Adrianodbs/ingl-s-react'
+  },
+  {
+    title: 'Clone da página da Disney +',
+    img: './img/disney.png',
+    description:
+      '(Um clone da página da Disney + realizada com o auxílio do canal no Youtube "Hello Codes".)',
+    url: 'https://adrianodbs.github.io/Clone-Disney/',
+    tags: ['html', 'css', 'javascript'].map(tag => getIconByTag(tag)),
+    github: 'https://github.com/Adrianodbs/Clone-Disney'
   }
 ]

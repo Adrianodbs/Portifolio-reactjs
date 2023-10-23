@@ -10,8 +10,14 @@ import {
 } from 'react-icons/si'
 import ButtonLink from '../../components/ButtonLink'
 import DemoProjects from '../../components/DemoProjects'
+import { useNavigate } from 'react-router-dom'
 
 function Home() {
+  const navigate = useNavigate()
+
+  const handleProjectsClick = () => {
+    navigate('/projects')
+  }
   return (
     <C.Container>
       <C.Title>
@@ -31,8 +37,8 @@ function Home() {
       </C.Links>
       <C.Projects>
         <h2>Aqui estão alguns dos meus principais projetos...</h2>
-
         <DemoProjects />
+        <button onClick={handleProjectsClick}>Ver todos os projetos</button>
       </C.Projects>
     </C.Container>
   )
