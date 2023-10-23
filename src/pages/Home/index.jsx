@@ -12,7 +12,16 @@ import {
 function Home() {
   return (
     <C.Container>
-      <h1>Home</h1>
+      <C.Title>
+        <h2>
+          Olá <span>^-^</span>
+        </h2>
+        <h1>
+          Me chamo <span>Adriano Alves</span> <br /> Dev.{' '}
+          <span>Front-End / Mobile</span>
+        </h1>
+      </C.Title>
+      <C.Links></C.Links>
     </C.Container>
   )
 }
