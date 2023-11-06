@@ -5,6 +5,7 @@ export const Header = styled.header`
   justify-content: space-between;
   padding: 32px 48px;
   color: #fff;
+  background-color: var(--black);
 `
 
 export const Menu = styled.ul`
@@ -56,6 +57,7 @@ export const Menu = styled.ul`
 `
 
 export const Title = styled.div`
+  transition: all 0.2s;
   h2 {
     display: flex;
     align-items: center;
@@ -66,6 +68,10 @@ export const Title = styled.div`
   a {
     text-decoration: none;
     color: #fff;
+  }
+
+  &:hover {
+    transform: scale(1.1);
   }
 `
 

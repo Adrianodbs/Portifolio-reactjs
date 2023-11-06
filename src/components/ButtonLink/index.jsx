@@ -17,6 +17,7 @@ const BtnLink = styled.button`
   cursor: pointer;
   min-width: 148px;
   margin-top: 20px;
+  background-color: var(--black);
 
   &:hover {
     background-color: var(--purple);

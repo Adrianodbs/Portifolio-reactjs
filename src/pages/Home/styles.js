@@ -6,6 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   color: #fff;
+  background-color: var(--black);
 `
 
 export const Title = styled.div`
@@ -58,6 +59,7 @@ export const Projects = styled.div`
     border: 1px solid #fff;
     font-size: 18px;
     border-radius: 12px;
+    background-color: var(--black);
 
     &:hover {
       background-color: var(--purple);
