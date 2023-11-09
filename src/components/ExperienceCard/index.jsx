@@ -30,9 +30,16 @@ const Container = styled.div`
     font-size: 20px;
     color: #fff;
     margin-bottom: 8px;
+
+    @media (max-width: 500px) {
+      font-size: 16px;
+    }
   }
 
   span {
     color: var(--gray);
+    @media (max-width: 500px) {
+      font-size: 14px;
+    }
   }
 `

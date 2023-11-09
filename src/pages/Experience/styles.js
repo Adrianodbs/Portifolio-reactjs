@@ -25,6 +25,10 @@ export const Top = styled.div`
     font-size: 36px;
     margin-bottom: 24px;
     text-align: center;
+
+    @media (max-width: 660px) {
+      font-size: 28px;
+    }
   }
 
   p {
@@ -34,6 +38,10 @@ export const Top = styled.div`
     max-width: 1000px;
     font-size: 20px;
     margin-bottom: 24px;
+
+    @media (max-width: 660px) {
+      font-size: 16px;
+    }
   }
 `
 
@@ -48,6 +56,11 @@ export const Experience = styled.div`
   h1 {
     color: #fff;
     margin: 40px auto;
+    text-align: center;
+
+    @media (max-width: 660px) {
+      font-size: 26px;
+    }
   }
 
   .cards {

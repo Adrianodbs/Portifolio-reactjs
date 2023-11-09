@@ -16,6 +16,7 @@ const Container = styled.div`
   justify-content: center;
   gap: 12px;
   padding: 12px;
+  width: 80px;
 
   img {
     width: 48px;
@@ -23,5 +24,6 @@ const Container = styled.div`
   span {
     color: var(--gray);
     font-size: 14px;
+    text-align: center;
   }
 `
