@@ -18,9 +18,10 @@ const Container = styled.div`
   padding: 12px;
 
   img {
-    width: 60px;
+    width: 48px;
   }
   span {
     color: var(--gray);
+    font-size: 14px;
   }
 `

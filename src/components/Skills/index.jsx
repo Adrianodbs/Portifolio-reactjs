@@ -11,16 +11,53 @@ import tailwind from '../../img/tailwindcss-plain.svg'
 import typescript from '../../img/typescript-original.svg'
 import java from '../../img/java.svg'
 import spring from '../../img/spring.svg'
-import styled from '../../img/styled.png'
+import styledComponent from '../../img/styled.png'
 import Stack from '../Stack'
+import styled from 'styled-components'
 
 export default function Skills() {
   return (
-    <div>
+    <Container>
       <h2>Tech Stack</h2>
       <div className="stacks">
-        <Stack />
+        <Stack img={html} title="HTML" />
+        <Stack img={css} title="CSS" />
+        <Stack img={javascript} title="JavaScript" />
+        <Stack img={typescript} title="TypeScript" />
+        <Stack img={react} title="React" />
+        <Stack img={next} title="Next" />
+        <Stack img={node} title="NodeJS" />
+        <Stack img={sass} title="Sass" />
+        <Stack img={tailwind} title="TailwindCSS" />
+        <Stack img={styledComponent} title="Styled-Components" />
+        <Stack img={git} title="Git" />
+        <Stack img={axiosImg} title="Axios" />
+        <Stack img={java} title="Java" />
+        <Stack img={spring} title="Spring Boot" />
       </div>
-    </div>
+    </Container>
   )
 }
+
+const Container = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    color: #fff;
+    margin-bottom: 24px;
+  }
+
+  .stacks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 800px;
+    gap: 16px;
+  }
+`
