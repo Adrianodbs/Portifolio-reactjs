@@ -11,6 +11,14 @@ export const Container = styled.div`
   h1 {
     font-size: 60px;
     text-align: center;
+
+    @media (max-width: 770px) {
+      font-size: 48px;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 32px;
+    }
   }
 
   p {
@@ -18,6 +26,10 @@ export const Container = styled.div`
     text-align: center;
     margin-top: 16px;
     font-size: 24px;
+
+    @media (max-width: 770px) {
+      font-size: 18px;
+    }
   }
 
   .projects {

@@ -24,6 +24,8 @@ export default function ProjectCard({ img, title, github, url }) {
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   img {
     width: 460px;
@@ -32,6 +34,11 @@ const Container = styled.div`
     border: 1px solid var(--gray);
     padding: 8px;
     border-radius: 8px;
+
+    @media (max-width: 500px) {
+      width: 280px;
+      height: 140px;
+    }
   }
 
   .info {
@@ -40,12 +47,23 @@ const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     margin: 20px 0;
+    gap: 12px;
+    width: 100%;
+  }
+
+  p {
+    text-align: left;
+    @media (max-width: 500px) {
+      font-size: 14px;
+    }
   }
 
   .links {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 12px;
+    margin-top: 20px;
 
     a {
       text-decoration: none;
@@ -53,6 +71,10 @@ const Container = styled.div`
 
       svg {
         font-size: 20px;
+
+        @media (max-width: 500px) {
+          font-size: 16px;
+        }
 
         &:hover {
           transform: scale(1.2);
