@@ -63,6 +63,10 @@ export const Title = styled.div`
     align-items: center;
     gap: 20px;
     cursor: pointer;
+
+    @media (max-width: 370px) {
+      font-size: 14px;
+    }
   }
 
   a {

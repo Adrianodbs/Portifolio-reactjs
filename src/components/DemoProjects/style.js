@@ -83,6 +83,7 @@ export const Content = styled.div`
     span {
       font-size: 20px;
       margin-bottom: 12px;
+      text-align: center;
     }
   }
 
@@ -112,6 +113,12 @@ export const Content = styled.div`
 
       &:hover {
         transform: scale(1.1);
+      }
+    }
+
+    p {
+      @media (max-width: 400px) {
+        display: none;
       }
     }
   }

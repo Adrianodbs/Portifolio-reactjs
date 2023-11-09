@@ -24,11 +24,20 @@ const BtnLink = styled.button`
     border: none;
   }
 
+  @media (max-width: 620px) {
+    padding: 8px;
+    min-width: 100px;
+  }
+
   a {
     font-weight: bold;
     font-size: 24px;
     background-color: transparent;
     text-decoration: none;
     color: #fff;
+
+    @media (max-width: 620px) {
+      font-size: 20px;
+    }
   }
 `

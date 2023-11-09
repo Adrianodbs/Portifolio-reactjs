@@ -18,12 +18,20 @@ export const Title = styled.div`
 
   h2 {
     font-size: 32px;
+
+    @media (max-width: 620px) {
+      font-size: 26px;
+    }
   }
 
   h1 {
     font-size: 48px;
     margin-top: 12px;
     text-align: center;
+
+    @media (max-width: 620px) {
+      font-size: 32px;
+    }
   }
 
   span {
@@ -48,6 +56,10 @@ export const Projects = styled.div`
     font-size: 32px;
     text-align: center;
     margin-bottom: 24px;
+
+    @media (max-width: 500px) {
+      font-size: 24px;
+    }
   }
 
   button {

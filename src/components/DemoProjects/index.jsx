@@ -10,6 +10,7 @@ export default function DemoProjects() {
   const handleProjectsClick = () => {
     navigate('/projects')
   }
+
   return (
     <C.Container>
       {MainList.map((i, index) => (
@@ -36,10 +37,10 @@ export default function DemoProjects() {
             </div>
             <div className="btn">
               <a href={i.github} target="_blank" rel="noopener noreferrer">
-                Ver no GitHub <FiGithub />
+                <p>Ver no GitHub</p> <FiGithub />
               </a>
               <a href={i.url} target="_blank" rel="noopener noreferrer">
-                Visitar o site <BsBoxArrowUpRight />
+                <p>Visitar o site</p> <BsBoxArrowUpRight />
               </a>
             </div>
           </div>
