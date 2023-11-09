@@ -6,6 +6,7 @@ import professor from '../../img/professor.png'
 import freelancer from '../../img/trabalho-freelance.png'
 import video4me from '../../img/video4me.jpg'
 import temvagamestre from '../../img/vaga-mestre.png'
+import Courses from '../../components/Courses'
 
 export default function Experience() {
   return (
@@ -58,6 +59,10 @@ export default function Experience() {
           />
         </div>
       </C.Experience>
+      <C.CourseList>
+        <h2>Cursos Realizados</h2>
+        <Courses />
+      </C.CourseList>
     </C.Container>
   )
 }

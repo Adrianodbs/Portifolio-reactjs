@@ -72,3 +72,26 @@ export const Experience = styled.div`
     gap: 32px;
   }
 `
+
+export const CourseList = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  border: 2px solid var(--purple);
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+
+  h2 {
+    color: #fff;
+    margin: 32px auto 20px;
+    font-size: 32px;
+    text-align: center;
+
+    @media (max-width: 400px) {
+      font-size: 26px;
+    }
+  }
+`
