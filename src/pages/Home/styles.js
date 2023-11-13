@@ -7,6 +7,15 @@ export const Container = styled.div`
   align-items: center;
   color: #fff;
   background-color: var(--black);
+
+  .skills {
+    width: 100%;
+
+    .skills-item {
+      transform: translateX(-700px) rotate(180deg);
+      opacity: 0;
+    }
+  }
 `
 
 export const Title = styled.div`

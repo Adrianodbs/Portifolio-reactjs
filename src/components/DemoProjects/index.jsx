@@ -4,15 +4,54 @@ import { MainList } from '../List/MainList'
 import * as C from './style'
 import { useNavigate } from 'react-router-dom'
 
+import { useLayoutEffect, useRef } from 'react'
+
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 export default function DemoProjects() {
   const navigate = useNavigate()
+  const el = useRef()
 
   const handleProjectsClick = () => {
     navigate('/projects')
   }
 
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger)
+
+    MainList.forEach((item, index) => {
+      const contentItem = el.current.children[index]
+
+      const animation = gsap.timeline({
+        scrollTrigger: {
+          trigger: contentItem,
+          scrub: true,
+          start: 'top 300px',
+          end: 'bottom 620px'
+        }
+      })
+
+      animation.fromTo(
+        contentItem,
+        {
+          opacity: 0,
+          y: 160
+        },
+        {
+          opacity: 1,
+          y: 0
+        }
+      )
+    })
+
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill())
+    }
+  }, [MainList])
+
   return (
-    <C.Container>
+    <C.Container ref={el}>
       {MainList.map((i, index) => (
         <C.Content key={index}>
           <div className="top">
