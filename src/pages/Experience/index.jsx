@@ -1,5 +1,4 @@
 import ExperienceCard from '../../components/ExperienceCard'
-import Skills from '../../components/Skills'
 import perfil from '../../img/perfil.jpg'
 import * as C from './styles'
 import professor from '../../img/professor.png'
@@ -8,7 +7,41 @@ import video4me from '../../img/video4me.jpg'
 import temvagamestre from '../../img/vaga-mestre.png'
 import Courses from '../../components/Courses'
 
+import React, { useLayoutEffect, useRef } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 export default function Experience() {
+  const el = useRef()
+
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger)
+
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: el.current,
+          scrub: true,
+          start: 'top 500px',
+          end: 'bottom 620px'
+        }
+      })
+      .fromTo(
+        el.current,
+        {
+          opacity: 0,
+          y: 160
+        },
+        {
+          opacity: 1,
+          y: 0
+        }
+      )
+
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill())
+    }
+  }, [])
   return (
     <C.Container>
       <C.Top>
@@ -36,7 +69,7 @@ export default function Experience() {
 
       <C.Experience>
         <h1>Experiências profissionais</h1>
-        <div className="cards">
+        <div className="cards" ref={el}>
           <ExperienceCard
             img={professor}
             title="Professor (Governo do Estado)"

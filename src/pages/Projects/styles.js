@@ -39,5 +39,6 @@ export const Container = styled.div`
     gap: 60px;
     flex-wrap: wrap;
     margin-top: 20px;
+    padding-bottom: 300px;
   }
 `
