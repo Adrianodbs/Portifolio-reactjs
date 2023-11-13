@@ -18,7 +18,7 @@ import styled from 'styled-components'
 export default function Skills() {
   return (
     <Container>
-      <h2>Tech Stack</h2>
+      <h2>Principais tecnologias</h2>
       <div className="stacks">
         <Stack img={html} title="HTML" />
         <Stack img={css} title="CSS" />
@@ -40,15 +40,19 @@ export default function Skills() {
 }
 
 const Container = styled.div`
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 2px dashed var(--purple);
+  border-radius: 8px;
+  margin: 12px auto;
 
   h2 {
     color: #fff;
-    margin-bottom: 24px;
+    margin: 24px auto;
+    text-transform: uppercase;
   }
 
   .stacks {

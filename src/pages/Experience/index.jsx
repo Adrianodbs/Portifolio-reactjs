@@ -33,7 +33,7 @@ export default function Experience() {
           o meu crescimento profissional.
         </p>
       </C.Top>
-      <Skills />
+
       <C.Experience>
         <h1>Experiências profissionais</h1>
         <div className="cards">

@@ -10,6 +10,7 @@ import {
 } from 'react-icons/si'
 import ButtonLink from '../../components/ButtonLink'
 import DemoProjects from '../../components/DemoProjects'
+import Skills from '../../components/Skills'
 
 function Home() {
   return (
@@ -29,6 +30,7 @@ function Home() {
           LinkedIn
         </ButtonLink>
       </C.Links>
+      <Skills />
       <C.Projects>
         <h2>Aqui estão alguns dos meus principais projetos...</h2>
         <DemoProjects />

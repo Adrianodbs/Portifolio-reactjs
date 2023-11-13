@@ -213,24 +213,6 @@ export const AllProjects = [
     tags: ['react', 'css', 'redux'].map(tag => getIconByTag(tag)),
     github: 'https://github.com/Adrianodbs/Reservas-com-redux'
   },
-  {
-    title: 'Beleza na web (Teste técnico)',
-    description: '(Teste técnico feito para treinar as habilidades em react.)',
-    url: 'https://beleza-na-web-wine.vercel.app/',
-    img: './img/beleza-web.png',
-    tags: ['react', 'css'].map(tag => getIconByTag(tag)),
-    github: 'https://github.com/Adrianodbs/beleza-na-web'
-  },
-
-  {
-    title: 'CRUD CodeLeap (Desafio técnico)',
-    description:
-      '(Desafio técnico proposto pela CodeLeap, onde foi criado um sistema de CRUD, utilizando o ReactJs, para estilização foi utilizado o CSS.)',
-    url: 'https://desafio-tecnico-codeleap.vercel.app/',
-    img: './img/codeleap.png',
-    tags: ['react', 'css'].map(tag => getIconByTag(tag)),
-    github: 'https://github.com/Adrianodbs/desafio-tecnico-codeleap'
-  },
 
   {
     title: 'Arte no Panno (Em andamento)',
