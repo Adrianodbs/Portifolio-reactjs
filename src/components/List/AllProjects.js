@@ -4,7 +4,8 @@ import {
   SiRedux,
   SiTypescript,
   SiStyledcomponents,
-  SiHtml5
+  SiHtml5,
+  SiTailwindcss
 } from 'react-icons/si'
 import { TbBrandNextjs, TbBrandJavascript } from 'react-icons/tb'
 
@@ -18,7 +19,8 @@ const iconsByTag = {
   typescript: <SiTypescript color="#0076C6" />,
   'styled-components': <SiStyledcomponents color="#D06EAA" />,
   sass: <FaSass color="#C76494" />,
-  nextjs: <TbBrandNextjs color="#000" />
+  nextjs: <TbBrandNextjs color="#000" />,
+  tailwind: <SiTailwindcss color="#35bef8" />
 }
 
 const getIconByTag = tag => iconsByTag[tag] || null
@@ -53,6 +55,15 @@ export const AllProjects = [
     url: 'https://supertrunfo-react.vercel.app/',
     tags: ['react', 'styled-components'].map(tag => getIconByTag(tag)),
     github: 'https://github.com/Adrianodbs/supertrunfo-react'
+  },
+  {
+    title: 'To do List daily',
+    img: './img/todolistdaily.png',
+    description:
+      '(To-do-list, utilizando React e Tailwind, onde é possivel monitorar a tarefas realizadas, e atribuir um rank relacionado a quantidade de tarefas realizadas. As tarefas também são separadas por data.)',
+    url: 'https://to-do-list-daily.vercel.app/',
+    tags: ['react', 'tailwind', 'typescript'].map(tag => getIconByTag(tag)),
+    github: 'https://github.com/Adrianodbs/To-do-List-daily'
   },
   {
     title: 'Mini-projetos JavaScript',

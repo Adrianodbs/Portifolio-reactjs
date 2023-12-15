@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { FiGithub } from 'react-icons/fi'
 import { BsBoxArrowUpRight } from 'react-icons/bs'
 
-export default function ProjectCard({ img, title, github, url }) {
+export default function ProjectCard({ img, title, github, url, tags }) {
   return (
     <Container>
       <img src={img} alt={title} />
@@ -15,6 +15,18 @@ export default function ProjectCard({ img, title, github, url }) {
           <a href={url} target="_blank" rel="noopener noreferrer">
             <BsBoxArrowUpRight />
           </a>
+        </div>
+      </div>
+      <div className="bottom">
+        <span>Tecnologias utilizadas:</span>
+        <div className="tags">
+          {tags.map((tag, index) => (
+            <div>
+              <h4 key={index} className="icons">
+                {tag}
+              </h4>
+            </div>
+          ))}
         </div>
       </div>
     </Container>
@@ -80,6 +92,33 @@ const Container = styled.div`
           transform: scale(1.2);
         }
       }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    span {
+      font-size: 20px;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+  }
+
+  .tags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 12px;
+
+    svg {
+      font-size: 32px;
     }
   }
 `

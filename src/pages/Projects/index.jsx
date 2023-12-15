@@ -57,6 +57,7 @@ export default function Projects() {
             github={project.github}
             title={project.title}
             url={project.url}
+            tags={project.tags}
           />
         ))}
       </div>
