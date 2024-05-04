@@ -48,16 +48,14 @@ export default function Experience() {
         <img src={perfil} alt="Foto do perfil" />
         <h2>Desenvolvedor Front-End | Mobile</h2>
         <p>
-          Olá, me chamo Adriano, tenho 2 anos de experiência sólida em React e
+          Olá, me chamo Adriano, tenho 2 anos e meio de experiência sólida em React e
           React Native, e estou comprometido com o constante aprimoramento dos
           meus conhecimentos em TypeScript, Java e NodeJS. <br /> <br />{' '}
-          Atualmente, estou enriquecendo minha formação com a pós-graduação em
-          Desenvolvimento Full Stack, focando especialmente no aprofundamento do
-          meu conhecimento em back-end, abrangendo áreas como gerenciamento de
-          bancos de dados, JWT, entre outros. <br /> <br /> Além disso, sou
-          ativamente envolvido em dois projetos voluntários como desenvolvedor
+          Sou pós-graduado em
+          Desenvolvimento Full Stack, onde aprimorei os meus conhecimentos em back-end, abrangendo áreas como gerenciamento de
+          bancos de dados, JWT, entre outros. <br /> <br /> Já participei também de projetos voluntários como desenvolvedor
           mobile, colaborando com profissionais de diversas áreas. Nesse papel,
-          sou responsável por elaborar as interfaces, implementar
+          fui responsável por elaborar as interfaces, implementar
           funcionalidades avançadas e garantir uma perfeita integração com o
           back-end. <br /> <br /> Uma das minhas paixões é desenvolver projetos
           pessoais diariamente, com o objetivo de acelerar minha aprendizagem e
@@ -83,12 +81,12 @@ export default function Experience() {
           <ExperienceCard
             img={video4me}
             title="Video4Me (Dev. Mobile)"
-            duration="MAR 2023 (Atual - Voluntário) "
+            duration="MAR 2023 / FEV 2024 "
           />
           <ExperienceCard
             img={temvagamestre}
             title="Tem vaga mestre? (Dev. Mobile)"
-            duration="JUN 2023 (Atual - Voluntário) "
+            duration="JUN 2023 / FEV 2024 "
           />
         </div>
       </C.Experience>
