@@ -170,35 +170,6 @@ export const AllProjects = [
     github: 'https://github.com/Adrianodbs/Todo-typescript'
   },
   {
-    title: 'API com destinos de viagem',
-    description:
-      '(Página com uma breve descrição de locais, onde foi implimentada a função de Show More e de delete, todos os dados foram retirados de uma API)',
-    url: 'https://react-resgatando-dados-de-api.vercel.app/',
-    img: './img/locais-api.png',
-    tags: ['react', 'css'].map(tag => getIconByTag(tag)),
-    github: 'https://github.com/Adrianodbs/react-resgatando-dados-de-API-'
-  },
-  {
-    title: 'Minha carteira',
-    description:
-      '(Sistema de controles de finanças, com dashboard utilizando gráficos para demonstrar as entradas e as saídas.)',
-    url: 'https://minha-carteira-pi.vercel.app/',
-    img: './img/minha-carteira.png',
-    tags: ['react', 'styled-components', 'typescript'].map(tag =>
-      getIconByTag(tag)
-    ),
-    github: 'https://github.com/Adrianodbs/Minha-carteira'
-  },
-  {
-    title: 'Buscador de repositórios',
-    description:
-      '(Aplicação utilizando a API do GitHub, onde é possível encontrar repositórios.)',
-    url: 'https://buscador-de-reposit-rios.vercel.app/',
-    img: './img/repos.png',
-    tags: ['react', 'styled-components'].map(tag => getIconByTag(tag)),
-    github: 'https://github.com/Adrianodbs/Buscador-de-reposit-rios'
-  },
-  {
     title: 'Bubble Coffee',
     description: '(Página de uma cafeteria utilizando o Next.Js.)',
     url: 'https://bubble-coffee.vercel.app/',
