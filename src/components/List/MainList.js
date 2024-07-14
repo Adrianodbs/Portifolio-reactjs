@@ -55,5 +55,14 @@ export const MainList = [
     img: './img/ingles.png',
     tags: ['react', 'css', 'firebase'].map(tag => getIconByTag(tag)),
     github: 'https://github.com/Adrianodbs/ingl-s-react'
+  },
+  {
+    title: 'Burguer Redux',
+    description:
+      'Projeto realizado em um teste técnico, onde foi preciso utilizar o Redux para gerenciar os produtos e o carrinho de compras.',
+    url: 'https://teste-21-06-24.vercel.app/',
+    img: './img/burguer.png',
+    tags: ['react', 'redux', 'typescript', 'styled-components'].map(tag => getIconByTag(tag)),
+    github: 'https://github.com/Adrianodbs/teste_21_06_24'
   }
 ]
